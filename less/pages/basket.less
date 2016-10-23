@@ -1,0 +1,437 @@
+//-----------------------
+//-----------------------
+// BASKET
+//-----------------------
+//-----------------------
+.decor-table {
+	border-radius: 10px;
+	border: 1px solid @color-black-7;
+	border-top: 3px solid @color-red;
+}
+.mod-table {
+	color: @color-balck-2;
+	width: 100%;
+	border-width: 0;
+
+	th {
+		border-bottom: 1px solid @color-black-7;
+		text-transform: uppercase;
+		font-size: 12px;
+		padding: 10px 15px;
+		border-right-width: 0;
+	}
+
+	td {
+		text-align: center;
+		vertical-align: middle;
+		border-right-width: 0;
+
+	}
+
+	th,
+	td {
+		vertical-align: middle;
+		border-bottom: 1px solid @color-black-7;
+		padding: 10px 5px;
+	}
+
+	.fa-close {
+		color: @color-gray-3;
+		transition: all .25s linear;
+
+		&:hover {
+			color: @color-balck-2;
+		}
+	}
+}
+
+table.table-sale {
+	th{
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
+	td {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+}
+
+.mod-table-red {
+	border: 1px solid @color-gray-2;
+	border-top: 2px solid @color-red;
+	border-radius: 8px;
+
+	table {
+		border-width: 0;
+
+		th,
+		td {
+			border-color: @color-gray-2;
+		}
+
+		tr {
+			&:last-child {
+				td {
+					border-bottom-width: 0;
+				}
+			}
+		}
+	}
+}
+
+.basket {
+	&__img {
+		display: none;
+	}
+
+	&__count-item {
+		font-family: "Helvetica";
+		font-weight: @font-medium;
+		font-size: 16px;
+	}
+
+	&__name {
+		line-height: 1;
+		font-family: "Helvetica";
+		color: @color-red;
+		font-weight: @font-bold;
+		text-transform: uppercase;
+
+		&:hover {
+			color: @color-red;
+		}
+	}
+
+	&__cost {
+		font-family: Helvetica;
+		font-size: 10px !important;
+		color: @color-black-5;
+		font-weight: @font-medium;
+
+		.count-cost {
+			margin: 0 3px;
+			font-size: 16px;
+		}
+	}
+}
+
+//-----------------------
+//-----------------------
+// Coupon
+//-----------------------
+//-----------------------
+.coupon {
+	.clearfix();
+	margin-top: 25px;
+
+	&__txt,
+	&__btn {
+		float: left;
+	}
+
+	&__txt {
+		width: 60%;
+		border-right-width: 0;
+		border-radius: 7px 0 0 7px;
+	}
+
+	&__btn {
+		width: 40%;
+		height: 34px;
+		border-radius: 0 7px 7px 0;
+	}
+}
+
+//-----------------------
+//-----------------------
+// Total cost
+//-----------------------
+//----------------------- 
+.total-cost {
+	margin-top: 20px;
+
+	&__item-count {
+		float: right;
+
+		span {
+			font-family: 'Helvetica';
+			margin-right: 5px;
+		}
+	}
+	&__item {
+		margin-bottom: 10px;
+	}
+
+	&__main {
+		color: @color-black-3;
+		font-weight: @font-bold;
+		font-size: 20px;
+		padding-top: 10px;
+		border-top: 1px solid @color-black-3;
+		.total-cost__item-count {
+			span {
+				font-weight: @font-medium;
+			}
+		}
+	}
+}
+
+.table-basket-order {
+	th {
+
+		&:first-child {
+			text-align: left;
+			padding-left: 25px;
+		}
+		
+	}
+}
+
+//-----------------------
+//-----------------------
+// Method payments
+//-----------------------
+//----------------------- 
+.basket-payment {
+	.clearfix();
+
+	&__title {
+		text-align: center;
+		color: @color-balck-2;
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+
+	&__item {
+		float: left;
+		width: 50%;
+		padding: 0 10px;
+		margin-bottom: 15px;
+
+		input[type="radio"] {
+			display: none;
+		}
+	}
+
+	input[type="radio"] {
+		&:checked + .basket-payment__img {
+			border-color: #ff4065;
+		}
+	}
+
+	p {
+		font-size: 13px;
+		text-align: center;
+		color: @color-black-5;
+	}
+
+	&__img {
+		transition: all .25s linear;
+		display: block;
+		background-color: @color-gray-9;
+		height: 100px;
+		padding-top: 32px;
+		border-radius: 10px;
+		border: 5px solid @color-white;
+		box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.1);
+		text-align: center;
+		margin-bottom: 10px;
+		cursor: pointer;
+
+		img {
+			vertical-align: middle;
+		}
+	}
+}
+
+
+@media all and (min-width: @media-xs) {
+	//-----------------------
+	//-----------------------
+	// BASKET
+	//-----------------------
+	//-----------------------
+	.mod-table { 
+		td {
+			padding: 15px;
+		}
+	}
+
+	//-----------------------
+	//-----------------------
+	// Total cost
+	//-----------------------
+	//----------------------- 
+	.total-cost {
+		margin-top: 23px;
+	}
+
+	//-----------------------
+	//-----------------------
+	// Method payments
+	//-----------------------
+	//----------------------- 
+	.basket-payment {
+		&__item {
+			width: 33.333%;
+		}
+	}
+}
+
+@media all and (min-width: @media-sm) {
+	//-----------------------
+	//-----------------------
+	// BASKET
+	//-----------------------
+	//-----------------------
+	.basket { 
+		&__img {
+			display: block;
+			float: left;
+			width: 80px;
+			height: 80px;
+			background-size: contain !important;
+			background-position: 50% 50%;
+			border-radius: 50%;
+		}
+
+		&__wrap-name {
+			margin-top: 30px;
+			margin-left: 100px;
+			text-align: left;
+		}
+	}
+
+	.mod-table { 
+		td {
+			padding: 10px 15px;
+		}
+	}
+
+	.count {
+		margin: 0 auto;
+	}
+
+	.table-basket {
+		th {
+			&:nth-child(2) {
+				text-align: left;
+				padding-left: 15px;
+			}
+		}
+	}
+
+	//-----------------------
+	//-----------------------
+	// Method payments
+	//-----------------------
+	//----------------------- 
+	.basket-payment {
+		&__item {
+			width: 50%;
+		}
+	}
+}
+
+@media all and (min-width: @media-mid) { 
+	//-----------------------
+	//-----------------------
+	// Coupon
+	//-----------------------
+	//-----------------------
+	.coupon {
+		margin-top: 35px;
+	}
+
+	//-----------------------
+	//-----------------------
+	// Total cost
+	//-----------------------
+	//----------------------- 
+	.total-cost {
+		margin-top: 33px;
+	}
+
+	//-----------------------
+	//-----------------------
+	// Method payments
+	//-----------------------
+	//----------------------- 
+	.basket-payment {
+		&__item {
+			width: 33.333%;
+		}
+	}
+
+	//-----------------------
+	//-----------------------
+	// Basket
+	//-----------------------
+	//----------------------- 
+	.basket {
+		&__img {
+			width: 100px;
+			height: 100px;
+		}
+
+		&__count-item {
+			font-size: 22px;
+		}
+
+		&__wrap-name {
+			margin-top: 42px;
+			margin-left: 120px;
+		}
+
+		&__name {
+			font-size: 20px;
+		}
+
+		&__cost {
+			font-size: 12px !important;
+
+			.count-cost {
+				font-size: 22px;
+				margin: 0 5px;
+			}
+		}
+	}
+
+	.table-basket {
+		th {
+			font-size: 14px;
+		}
+
+		td {
+			padding: 20px;
+		}
+	}
+
+	.count {
+		width: 115px;
+		padding: 5px 15px;
+
+		&__item {
+			width: 50px;
+			font-size: 18px;
+			top: 1px;
+		}
+	}
+}
+
+@media all and (min-width: @media-lg) { 
+	//-----------------------
+	//-----------------------
+	// Coupon
+	//-----------------------
+	//-----------------------
+	.coupon {
+		&__txt {
+			width: 50%;
+		}
+		&__btn {
+			width: 30%;
+		}
+	}
+}

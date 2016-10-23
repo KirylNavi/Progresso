@@ -1,0 +1,179 @@
+//-----------------------
+//-----------------------
+// NEWS
+//-----------------------
+//-----------------------
+.news {
+	&__img {
+		display: block;
+		height: 180px;
+		border-radius: 15px;
+		background-size: cover !important;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+	}
+
+	&__title {
+		font-size: 22px;
+		font-family: "Helvetica";
+		font-weight: @font-bold;
+		line-height: 1.2;
+		display: block;
+		max-height: 108px;
+		overflow: hidden;
+		margin-bottom: 5px;
+		color: @color-black-5;
+		&:hover {
+			color: @color-red;
+		}
+	}
+
+	&__txt {
+		display: block;
+		max-height: 178px;
+		overflow: hidden;
+	}
+
+	&__post-meta {
+		overflow: hidden;
+		margin-top: 5px;
+		margin-top: 10px;
+	}
+
+	&__list-meta {
+		font-family: "Helvetica";
+		font-size: 13px;
+		float: left;
+
+
+		.fa {
+			margin-right: 5px;
+			font-size: 14px;
+			color: @color-black-5;
+		}
+
+		li {
+			margin-bottom: 5px;
+		}
+	}
+
+	&__item-link {
+		margin-top: -3px;
+		color: @color-black-5;
+		
+		&:hover {
+			color: @color-red;
+		}
+	}
+
+	&__item {
+
+		&:after {
+			content: "";
+			display: block;
+			clear: both;
+			height: 1px;
+			margin: 25px 0 35px;
+			background-color: @color-gray-2; 
+		}
+
+		&:not(:last-child) {
+			margin-bottom: 40px;
+		}
+	}
+}
+
+@media all and (min-width: @media-xs) {
+	//-----------------------
+	//-----------------------
+	// NEWS
+	//-----------------------
+	//-----------------------
+	.news {
+
+		&__title {
+			margin-bottom: 10px;
+		}
+
+		&__post-meta {
+			margin-top: 25px;
+		}
+	}
+}
+
+@media all and (min-width: @media-sm) {
+	//-----------------------
+	//-----------------------
+	// NEWS
+	//-----------------------
+	//-----------------------
+	.news {
+		&__img {
+			height: 240px;
+		}
+	}
+}
+
+@media all and (min-width: @media-mid) {
+	//-----------------------
+	//-----------------------
+	// NEWS
+	//-----------------------
+	//-----------------------
+	.news {
+		&__wrap-info {
+			margin-left: 10px;
+		}
+		&__img {
+			height: 200px;
+		}
+
+		&__title {
+			margin-top: 0;
+			max-height: 55px;
+		}
+
+		&__txt {
+			max-height: 90px;
+		}
+
+		&__post-meta {
+			margin-top: 16px;
+		}
+
+		&__item {
+			&:after {
+				margin: 40px 0;
+			}
+			&:not(:last-child) {
+				margin-bottom: 0;
+			}
+			
+		}
+	}
+}
+
+@media all and (min-width: @media-lg) {
+	//-----------------------
+	//-----------------------
+	// NEWS
+	//-----------------------
+	//-----------------------
+	.news {
+		&__img {
+			height: 240px;
+		}
+
+		&__txt {
+			max-height: 135px;
+		}
+
+		&__item {
+			&:not(:last-child) {
+				&:after {
+					margin: 50px 0;
+				}
+			}
+		}
+	}
+}

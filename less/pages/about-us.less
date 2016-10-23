@@ -1,0 +1,180 @@
+//-----------------------
+//-----------------------
+// ABOUT US
+//-----------------------
+//-----------------------
+.about-us {
+
+	&__block {
+		&-xs,
+		&-sm,
+		&-md,
+		&-lg {
+			background-size: cover !important;
+			background-position: 50% 50%;
+			background-repeat: no-repeat;
+			border-radius: 15px;
+			overflow: hidden;
+		}
+
+		&-xs {
+			height: 200px;
+		}
+	}
+
+	&__txt {
+		border-radius: 0;
+	}
+}
+
+//-----------------------
+//-----------------------
+// CONTACT
+//-----------------------
+//-----------------------
+.contact-block {
+	border: 1px solid @color-black-7;
+	border-radius: 15px;
+	padding: 50px 15px 20px;
+	text-align: center;
+	position: relative;
+	font-family: 'Bebas';
+	font-weight: @font-bold;
+	color: @color-balck-2;
+	margin: 0 auto 55px;
+
+	&__icon {
+		position: absolute;
+		display: block;
+		left: 50%;
+		width: 70px;
+		height: 70px;
+		border-radius: 50%;
+		top: -35px;
+		margin-left: -35px;
+		background-color: @color-red-3;
+
+		&:after {
+			content: "\f041";
+			display: inline-block;
+			font-family: FontAwesome;
+			font-size: 34px;
+			margin-top: 10px;
+			text-rendering: auto;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+			color: @color-white;
+		}
+	}
+
+	p {
+		font-size: 30px;
+		margin-bottom: 0;
+	}
+
+	&.mod-txt {
+		p {
+			font-size: 20px;
+			line-height: 1.2;
+		}
+	}
+}
+
+//-----------------------
+//-----------------------
+// MAP CONTACT
+//-----------------------
+//-----------------------
+.map-contact {
+	border-top: 5px solid @color-gray-9;
+	height: 350px;
+}
+
+@media all and (min-width: @media-xs) {
+	//-----------------------
+	//-----------------------
+	// ABOUT US
+	//-----------------------
+	//-----------------------
+	.about-us {
+		&__block {
+			&-sm {
+				height: 420px;
+			}
+		}
+	}
+
+	//-----------------------
+	//-----------------------
+	// CONTACT
+	//-----------------------
+	//-----------------------
+	.contact-block {
+		width: 70%;
+	}
+}
+
+@media all and (min-width: @media-sm) {
+	//-----------------------
+	//-----------------------
+	// CONTACT
+	//-----------------------
+	//-----------------------
+	.contact-block { 
+		width: 100%;
+
+		&.mod-txt {
+			padding: 54px 15px 10px;
+		}
+	}
+}
+
+@media all and (min-width: @media-mid) {
+	//-----------------------
+	//-----------------------
+	// ABOUT US
+	//-----------------------
+	//-----------------------
+	.about-us {
+		&__block {
+			&-md {
+				height: 420px;
+				overflow: hidden;
+			}
+			&-lg {
+				height: 320px;
+			}
+		}
+
+		&__txt {
+			height: 396px;
+			padding: 0 25px 20px;
+		}
+	}
+
+	//-----------------------
+	//-----------------------
+	// MAP CONTACT
+	//-----------------------
+	//-----------------------
+	.map-contact {
+		height: 500px;
+	}
+}
+
+@media all and (min-width: @media-lg) {
+	//-----------------------
+	//-----------------------
+	// CONTACT
+	//-----------------------
+	//-----------------------
+	.contact-block { 
+		padding-bottom: 15px;
+		width: 90%;
+		
+		&.mod-txt {
+			padding-top: 50px;
+		}
+
+	}
+}

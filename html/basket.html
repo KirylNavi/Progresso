@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Basket</title>
+	//= template/head.html
+</head>
+<body>
+	//= template/header.html
+
+	<div class="basket block">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="block__main-title mt-xlg">
+						<h3 class="title decor">Корзина</h3>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<table class="mod-table table-basket">
+							<thead>
+								<th>
+
+								</th>
+								<th>
+									Назввание
+								</th>
+								<th>
+									Кол-во
+								</th>
+								<th>
+									Сумма
+								</th>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<a>
+											<i class="fa fa-close"></i>
+										</a>
+									</td>
+									<td>
+										<a href="#" class="basket__img" style="background-image: url('images/gallery/gallery-1.jpg')"></a>
+										<div class="basket__wrap-name">
+											<a href="#" class="basket__name">Коктейль "Кровавая мери"</a>
+										</div>
+									</td>
+									<td>
+										<div class="count count-js">
+											<span class="count__btn count__btn-minus">-</span>
+											<input type="text" class="count__item" disabled value="12">
+											<span class="count__btn count__btn-plus">+</span>
+										</div>
+									</td>
+									<td class="basket__cost">
+										<span class="count-cost">24</span>руб<span class="count-cost">40</span>коп
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a>
+											<i class="fa fa-close"></i>
+										</a>
+									</td>
+									<td>
+										<a class="basket__img" style="background-image: url('images/gallery/gallery-2.jpg')"></a>
+										<div class="basket__wrap-name">
+											<a href="#" class="basket__name">Коктейль "Кровавая мери"</a>
+										</div>
+									</td>
+									<td>
+										<div class="count count-js">
+											<span class="count__btn count__btn-minus">-</span>
+											<input type="text" class="count__item" disabled value="12">
+											<span class="count__btn count__btn-plus">+</span>
+										</div>
+
+									</td>
+									<td class="basket__cost">
+										<span class="count-cost">24</span>руб<span class="count-cost">40</span>коп
+									</td>
+								</tr>
+							</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-6 col-md-5">
+					<div class="coupon">
+						<input type="text" class="form-control coupon__txt" placeholder="Номер купона">
+						<button class="btn coupon__btn">Применить</button>
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-5 col-sm-offset-1 col-md-4 col-md-offset-3">
+					<div class="total-cost">
+						<div class="total-cost__item">
+							Сумма заказа: <span class="total-cost__item-count"><span>24,53</span>руб</span>
+						</div>
+						<div class="total-cost__item">
+							Сумма доставки: <span class="total-cost__item-count"><span>24,53</span>руб</span>
+						</div>
+						<div class="total-cost__item total-cost__main">
+							Общая сумма: <span class="total-cost__item-count"><span>24,53</span>руб</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="block__main-title mt-xxxxlg">
+						<h3 class="title decor">Оплата заказа</h3>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-6">
+					<h4 class="basket-payment__title">Выберите способ оплаты</h4>
+					<div class="basket-payment">
+						<div class="basket-payment__item">
+							<label>
+								<input type="radio" name="basket-payment" checked>
+								<span class="basket-payment__img">
+									<img src="images/payments/visa.svg" alt="" class="mr-xs" style="width: 50px;">													
+									<img src="images/payments/mastercard.svg" style="width: 46px;">
+								</span>
+							</label>
+							<p>Оплатить с помощью платежных карт VISA / MasterCard</p>
+						</div>
+						<div class="basket-payment__item">
+							<label>
+								<input type="radio" name="basket-payment">
+								<span class="basket-payment__img">
+									<img src="images/payments/paypal.svg" alt="" style="width: 70px;">
+								</span>
+							</label>
+							<p>Оплатить с помощью счета PayPal (Электронные система платежей)</p>
+						</div>
+						<div class="basket-payment__item">
+							<label>
+								<input type="radio" name="basket-payment">
+								<span class="basket-payment__img">
+									<img src="images/payments/webmoney.svg" alt="" style="width: 110px;">
+								</span>
+							</label>
+							<p>Оплатить с помощьюкошелька WebMoney (Электронные система платежей)</p>
+						</div>
+					</div>
+					<h4 class="basket-payment__title">Введите данные оплаты</h4>
+					<form class="form-horizontal">
+						<div class="form-group mb-md">
+							<input type="text" class="form-control" placeholder="Номер карты">
+						</div>
+						<div class="form-group mb-md">
+							<input type="text" class="form-control" placeholder="ФИО">
+						</div>
+						<div class="form-group mb-md">
+							<input type="text" class="form-control" placeholder="CVV код">
+						</div>
+					</form>
+				</div>
+				<div class="col-xs-12 col-sm-6">
+					<h4 class="basket-payment__title">Данные доставки</h4>
+					<form action="form-horizontal">
+						<div class="form-group mb-md">
+							<input type="text" class="form-control" placeholder="Название улицы">
+						</div>
+						<div class="form-group mb-md">
+							<input type="text" class="form-control" placeholder="Номер дома">
+						</div>
+						<div class="form-group mb-md">
+							<input type="text" class="form-control" placeholder="Номер квартиры">
+						</div>
+						<div class="form-group mb-md">
+							<input type="text" class="form-control" placeholder="ФИО">
+						</div>
+						<div class="form-group mb-md txt-center">
+							<button class="btn btn-full">Заказать</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	//= template/footer.html
+
+	//= template/foot.html
+</body>

@@ -1,0 +1,190 @@
+//-----------------------
+//-----------------------
+// NEWS ITEM
+//-----------------------
+//-----------------------
+.news-item {
+	img {
+		border-radius: 15px;
+		width: 100%;
+		height: auto;
+		margin-bottom: 15px;
+	}	
+
+	&__post-meta {
+		padding: 10px 0 20px;
+		border-bottom: 1px solid @color-gray-4;
+	}
+
+	&__list-post-meta  {
+		font-size: 13px;
+		overflow: hidden;
+		span {
+			font-family: "Helvetica";
+		}
+
+		.fa {
+			font-size: 14px;
+			margin-right: 5px;
+			color: @color-black-5;
+		}
+
+		li {
+			float: left;
+			margin-right: 15px;
+		}
+
+		span {
+			color: @color-gray;
+		}
+	}
+
+	&__page {
+		margin-top: 50px;
+		overflow: hidden;
+
+		a {
+			display: inline-block;
+			font-size: 12px;
+			color: red;
+			border: 1px solid @color-red;
+			padding: 5px 10px;
+			border-radius: 50px;
+
+			&:hover {
+				color: @color-white;
+				background-color: @color-red;
+			}
+		}
+
+		.fa {
+			margin-right: 5px;
+		}
+	}
+
+	&__page-link {
+		float: left;
+		width: 50%;
+
+		&:last-child {
+			text-align: right;
+
+			.fa {
+				margin-right: 0;
+				margin-left: 5px;
+			}
+		}
+	}
+}
+
+@media all and (min-width: @media-xs) {
+	//-----------------------
+	//-----------------------
+	// NEWS ITEM
+	//-----------------------
+	//-----------------------
+	.news-item {
+		&__page {
+			a {
+				padding: 5px 15px;
+			}
+		}
+	}
+}
+
+@media all and (min-width: @media-sm) {
+	//-----------------------
+	//-----------------------
+	// NEWS ITEM
+	//-----------------------
+	//-----------------------
+	.news-item {
+		img {
+			max-width: 300px;
+			&.pull-left {
+				margin-right: 20px;
+				margin-bottom: 20px;
+			}
+
+			&.pull-right {
+				margin-left: 20px;
+				margin-bottom: 20px;
+			}
+
+			&.full-wdth {
+				max-width: 100%;
+			}
+		}
+
+		&__post-meta {
+			padding: 15px 0 30px;
+		}
+
+		&__page {
+			a {
+				font-size: 14px;
+				padding: 8px 18px;
+			}
+		}
+	}
+}
+
+@media all and (min-width: @media-mid) {
+	//-----------------------
+	//-----------------------
+	// NEWS ITEM
+	//-----------------------
+	//-----------------------
+	.news-item {
+		img {
+			&.full-wdth {
+				margin-bottom: 30px;
+			}
+
+			&.pull-left {
+				margin-right: 35px;
+				margin-bottom: 20px;
+			}
+
+			&.pull-right {
+				margin-left: 35px;
+				margin-bottom: 20px;
+			}
+		}
+	}
+}
+
+@media all and (min-width: @media-lg) {
+	//-----------------------
+	//-----------------------
+	// NEWS ITEM
+	//-----------------------
+	//-----------------------
+	.news-item {
+
+		img {
+			max-width: 350px;
+
+			&.pull-left {
+				margin-right: 25px;
+				margin-bottom: 25px;
+			}
+		}
+		&__list-post-meta {
+			font-size: 14px;
+
+			li {
+				margin-right: 20px;
+			}
+		}
+
+		&__page {
+			margin-top: 65px;
+
+			a {
+				font-size: 16px;
+				padding: 10px 20px;
+			}
+		}
+	}
+}

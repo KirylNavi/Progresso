@@ -1,0 +1,173 @@
+.foot {
+	background-color: @color-black-4;
+	padding: 50px 0;
+	color: @color-gray-8;
+
+	&__title {
+		color: @color-yellow;
+		text-transform: uppercase;
+		font-weight: @font-bold;
+		margin: 20px 0 10px;
+	}
+
+	&__contact-item {
+		font-family: 'Helvetica';
+		font-weight: @font-light;
+		font-size: 13px;
+		margin-bottom: 5px;
+
+		.fa {
+			width: 20px;
+			font-size: 14px;
+		}
+		
+	}
+
+	&__work-item {
+		font-family: 'Helvetica';
+		font-weight: @font-light;
+		font-size: 13px;
+
+		&:not(:last-child) {
+			margin-bottom: 5px;
+		}
+	}
+
+	&__work-time {
+		font-weight: @font-medium;
+		color: @color-gray-7;
+
+		&:not(:last-child) {
+			margin-bottom: 5px;
+		}
+	}
+
+	&__work-name,
+	&__work-time {
+		display: block;
+	}
+
+	&__links-list {
+		a {
+			font-size: 12px;
+			display: inline-block;
+			padding: 2px 0;
+			text-transform: uppercase;
+			font-weight: @font-regular-def;
+			font-family: 'Helvetica';
+			font-weight: @font-light;
+			font-size: 15px;
+
+			&:hover {
+				color: @color-white;
+			}
+
+			&:before {
+				content: "\f101";
+				display: inline-block;
+			    font-family: FontAwesome;
+			    font-size: 19px;
+				margin-right: 10px;
+				position: relative;
+				top: 1px;
+			    text-rendering: auto;
+			    -webkit-font-smoothing: antialiased;
+			    -moz-osx-font-smoothing: grayscale;
+			}
+		}
+	}
+
+	.list-soc {
+		margin-top: 15px;
+		margin-bottom: 20px;
+	}
+}
+
+@media all and (min-width: @media-xs) {
+	.foot {
+		&__links-list {
+			overflow: hidden;
+
+			li {
+				float: left;
+				width: 50%;
+			}
+		}
+	}
+}
+
+@media all and (min-width: @media-sm) {
+	.foot {
+		.list-soc {
+			margin-bottom: 0;
+		}
+	}	
+}
+
+@media all and (min-width: @media-mid) {
+	.foot {
+		margin-top: 120px;
+
+		&__work-item {
+			overflow: hidden;
+			position: relative;
+
+			&:before {
+				content: "...................................................................";
+				position: absolute;
+				bottom: 5px;
+				left: 0;
+				z-index: 0;
+			}
+		}
+
+		&__work-name,
+		&__work-time {
+			display: inline-block;
+			overflow: hidden;
+			background-color: @color-black-4;
+			position: relative;
+			z-index: 10;
+		}
+
+		&__work-time {
+			padding-left: 10px;
+			float: right;
+		}
+
+		&__title {
+			margin-bottom: 30px;
+		}
+
+		&__work {
+			padding-right: 40px;
+			margin-top: 65px;
+			position: relative;
+
+			&:after {
+				content: "";
+				position: absolute;
+				width: 192px;
+				height: 182px;
+				background: url("@{path-img}/decor-elem/decor-12.png") no-repeat 50% 50%;
+				background-size: contain !important;
+				top: -203px;
+				left: 85px;
+			}
+		}
+	}
+}
+
+@media all and (min-width: @media-lg) {
+	.foot {
+		padding: 68px 0 80px;
+		
+		&__work {
+			padding-right: 0;
+		}
+
+		&__title {
+			margin-bottom: 20px;
+		}
+	}
+}

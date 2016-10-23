@@ -1,0 +1,46 @@
+//-----------------------
+//-----------------------
+// MAIN SLIDER
+//-----------------------
+//-----------------------
+.contact {
+	&__title {
+		font-weight: @font-regular;
+		font-size: 22px;
+		color: @color-balck-2;
+		margin: 25px 0;
+	}
+
+	&__time-work {
+		li {
+			&:not(:last-child) {
+				margin-bottom: 5px;
+			}
+		}
+		span {
+			font-family: "Helvetica";
+			float: right;
+		}
+	}
+
+	&__address-block {
+		font-family: "Helvetica";
+		margin-bottom: 25px;
+
+		p {
+			margin-bottom: 5px;
+		}
+
+		.fa {
+			margin-right: 10px;
+		}
+
+		a {
+			color: @color-red;
+
+			&:hover {
+				border-bottom: 1px solid @color-red;
+			}
+		}
+	}
+}

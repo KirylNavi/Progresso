@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Menu page</title>
+	//= template/head.html
+</head>
+<body>
+	//= template/header.html
+	
+	<div class="registr block">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6 col-md-4 col-md-offset-1">
+					<div class="modal__title">
+						<p>
+							Регистрация
+						</p>
+					</div>
+					<form action="" class="form-horizontal">
+						<div class="form-group mb-md">
+							<input type="text" class="form-control" placeholder="Логин">
+						</div>
+						<div class="form-group mb-md">
+							<input type="text" class="form-control" placeholder="E-mail">
+						</div>
+						<div class="form-group mb-md">
+							<input type="password" class="form-control" placeholder="Пароль">
+						</div>
+						<div class="form-group txt-center">
+							<input type="submit" class="btn" value="Продолжить">
+						</div>
+					</form>
+				</div>
+				<div class="col-xs-6 col-md-4 col-md-offset-2 registr__sign-in">
+					<div class="modal__title">
+						<p>
+							Вход
+						</p>
+					</div>
+					<form action="" class="form-horizontal">
+						<div class="form-group mb-md">
+							<input type="text" class="form-control" placeholder="Логин / Email...">
+						</div>
+						<div class="form-group mb-md">
+							<input type="password" class="form-control" placeholder="Пароль">
+						</div>
+						<div class="row">
+							<div class="col-xs-6">
+								<div class="form-group">
+									<label class="checkbox vertical-align">
+										<input type="checkbox">
+										<span>
+											Запомнить меня
+										</span>
+									</label>
+
+								</div>
+							</div>
+							<div class="col-xs-6">
+								<div class="form-group">
+									<input type="submit" class="btn btn-full" value="Войти">
+								</div>
+							</div>
+						</div>
+					</form>
+					<div class="spinner mt-xs">
+						<div class="spinner__elem"></div>
+					</div>
+					<div class="login-soc">
+						<div class="row">
+							<div class="col-xs-6">
+								<span class="login-soc__txt">Войти через:</span>
+							</div>
+							<div class="col-xs-6">
+								<div class="login-soc__wrap-list-soc">
+									<ul class="list-soc">
+										<li>
+											<a href="#">
+												<i class="fa fa-facebook"></i>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<i class="fa fa-vk"></i>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<i class="fa fa-instagram"></i>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+
+	//= template/footer.html
+
+	//= template/foot.html
+</body>

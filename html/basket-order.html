@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Menu page</title>
+	//= template/head.html
+</head>
+<body>
+	//= template/header.html
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="user-title">
+					<span>Пользователь: <span class="user-title__name">User</span></span>
+					<a href="#" class="user-title__sign-out pull-right">Выход <i class="fa fa-sign-out"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="personal-cabinet__page mb-xxlg">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-3">
+					<ul class="personal-cabinet__nav">
+						<li>
+							<a href="#">Личные данные</a>
+						</li>
+						<li class="active">
+							<a href="#">История покупок</a>
+						</li>
+						<li>
+							<a href="#">Корзина</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-9">
+					<div class="personal-cabinet__content">
+						<div class="row">
+							<div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1">
+								<h4 class="basket-payment__title">
+									Адрес доставки
+								</h4>
+							</div>
+							<div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 mb-xxxlg">
+								<table class="data-user-order">
+									<tr>
+										<td>
+											ФИО:
+										</td>
+										<td>
+											Иванов Иван Иванович
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Адрес доставки:
+										</td>
+										<td>
+											бул. Шевченко 324, Брест
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Тип платежа:
+										</td>
+										<td>
+											безналичный
+										</td>
+									</tr>
+								</table>
+							</div>
+							<div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1">
+								<h4 class="basket-payment__title">
+									Данные заказа
+								</h4>
+							</div>
+							<div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1">
+								<table class="mod-table table-basket table-basket-order">
+									<thead>
+										<th>
+											Назввание
+										</th>
+										<th>
+											Кол-во
+										</th>
+										<th>
+											Сумма
+										</th>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												<a href="#" class="basket__img" style="background-image: url('images/gallery/gallery-1.jpg')"></a>
+												<div class="basket__wrap-name">
+													<a href="#" class="basket__name">Коктейль "Кровавая мери"</a>
+												</div>
+											</td>
+											<td>
+												<span class="basket__count-item">12</span>
+											</td>
+											<td class="basket__cost">
+												<span class="count-cost">24</span>руб<span class="count-cost">40</span>коп
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<a class="basket__img" style="background-image: url('images/gallery/gallery-2.jpg')"></a>
+												<div class="basket__wrap-name">
+													<a href="#" class="basket__name">Коктейль "Кровавая мери"</a>
+												</div>
+											</td>
+											<td>
+												<span class="basket__count-item">32</span>
+											</td>
+											<td class="basket__cost">
+												<span class="count-cost">24</span>руб<span class="count-cost">40</span>коп
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1">
+								<div class="row">
+									<div class="col-xs-7 col-xs-offset-5 col-sm-7 col-sm-offset-5 col-md-6 col-md-offset-6">
+										<div class="total-cost">
+											<div class="total-cost__item">
+												Сумма заказа: <span class="total-cost__item-count"><span>24,53</span>руб</span>
+											</div>
+											<div class="total-cost__item">
+												Сумма доставки: <span class="total-cost__item-count"><span>24,53</span>руб</span>
+											</div>
+											<div class="total-cost__item total-cost__main">
+												Общая сумма: <span class="total-cost__item-count"><span>24,53</span>руб</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	//= template/footer.html
+
+	//= template/foot.html
+</body>
