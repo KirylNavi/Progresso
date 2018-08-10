@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>About</title>
+
+	<!-- Stylesheet -->
+	<link rel="stylesheet" href="./css/bootstrap.css">
+	<link rel="stylesheet" href="./css/bootstrap-select.css">
+	<link rel="stylesheet" href="./css/jquery.jscrollpane.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+	<link rel="stylesheet" href="./css/myIcons.css">
+	<link rel="stylesheet" href="./css/font-awesome.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+	<div class="mob-menu">
+		<div class="mob-menu__head">
+			<div class="mob-menu__head-lang">
+				<a class="active" href="#">EN</a>
+				<a href="#">RU</a>
+			</div>
+			<div class="mob-menu__head-logo">
+				<a href="#" class="logo-first">
+					<img src="./images/logo-mobile.svg" alt="Logo mobile first">
+				</a>
+				<a href="#" class="logo-second">
+					<img src="./images/logo.svg" alt="Logo mobile second">
+				</a>
+			</div>
+			<div class="mob-menu__head-btn">
+				<span class="mob-btn" mob-btn-menu>
+					<span></span>
+					<span></span>
+					<span></span>
+				</span>
+			</div>
+		</div>
+		<div class="mob-menu__content">
+			<div class="contain">
+				<ul class="mob-menu__list">
+					<li>
+						<a href="#">Главная</a>
+					</li>
+					<li>
+						<a href="#">Новости</a>
+					</li>
+					<li>
+						<a href="#">Карьера</a>
+					</li>
+					<li>
+						<a href="#">Бренды</a>
+					</li>
+					<li>
+						<a href="#">Партнерам</a>
+					</li>	
+					<li>
+						<a href="#">Контакты</a>
+					</li>
+					<li class="social">
+						<div class="menu__social white">
+							<ul>
+								<li>
+									<a href="#">
+										<i class="fa fa-vk"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-facebook"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-instagram"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-map-marker"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>	
+				</ul>
+			</div>
+			
+		</div>
+	</div>
+	
+	<header class="head">
+		<div class="section">
+			<div class="section__content">
+				
+				<div class="head__wrap">
+	
+					<div class="head__logo">
+						<a href="#" class="logo-mob__link">
+							<img src="./images/logo.svg" alt="Logo">
+						</a>
+					</div>
+	
+					<div class="head__breadcrumbs">
+						<ul>
+							<li>
+								<a href="#">Главная</a>
+							</li>
+							<li>
+								<a href="#">Новости</a>
+							</li>
+							<li>
+								<a href="#">Текущая новость</a>
+							</li>
+						</ul>
+					</div>
+	
+					<div class="head__btn-menu">
+						<span class="btn-mob-menu" mob-btn-menu>
+							<span></span>
+							<span></span>
+							<span></span>
+						</span>
+					</div>
+	
+					<div class="head__language">
+						<ul>
+							<li>
+								<a href="#">EN</a>
+							</li>
+							<li>
+								<a class="active" href="#">RU</a>
+							</li>
+						</ul>
+					</div>
+	
+				</div>
+	
+			</div>
+		</div>
+	</header>
+	
+	<div class="wrap-desktop-menu def" data-menu-desktop>
+		<div class="menu" >
+			<div class="menu__wrap">
+				<div class="menu__first">
+					<div class="menu__logo">
+						<a href="#">
+							<i class="my-icon icon-logo"></i>
+						</a>
+					</div>
+					<menu class="menu__list">
+						<li>
+							<a href="#">Главная</a>
+						</li>
+						<li>
+							<a href="#">Новости</a>
+						</li>
+						<li>
+							<a href="#">Карьера</a>
+						</li>
+						<li>
+							<a href="#">Бренды</a>
+						</li>
+						<li>
+							<a href="#">Партнерам</a>
+						</li>
+						<li>
+							<a href="#">Контакты</a>
+						</li>
+					</menu>
+					<div class="menu__social">
+						<ul>
+							<li>
+								<a href="#">
+									<i class="fa fa-vk"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fa fa-instagram"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fa fa-map-marker"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Title slider -->
+	<div class="main-title set-top-menu" data-set-menu>
+	    <div class="title-slider" title-slider>
+	        <div class="swiper-wrapper">
+	            <!-- Slides -->
+	            <div class="swiper-slide">
+	                <div class="main-title__item">
+	                    <section class="section">
+	                        <div class="section__content">
+	                            <h2 class="title h1 mb-20">Заголовок крупный <br> на две строки</h2>
+	                            <p class="txt">Мелкий текст на одну или несколько строк, <br> в зависимости от настроения</p>
+	                        </div>
+	                        <div class="section__aside"></div>
+	                    </section>
+	                </div>
+	            </div>
+	            <div class="swiper-slide">
+	                <div class="main-title__item">
+	                    <section class="section">
+	                        <div class="section__content">
+	                            <h2 class="title h1 mb-20">
+	                                Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.."
+	                            </h2>
+	                            <p class="txt">
+	                                Мелкий текст на одну или несколько строк, <br> в зависимости от настроения <br>
+	                                Мелкий текст на одну или несколько строк, <br> в зависимости от настроения
+	                            </p>
+	                        </div>
+	                        <div class="section__aside"></div>
+	                    </section>
+	                </div>
+	            </div>
+	            <!-- Slides -->
+	        </div>
+	        <div class="swiper-btn-next">
+	            <i class="my-icon icon-slider-arrow-upp"></i>
+	        </div>
+	        <div class="swiper-btn-prev">
+	            <i class="my-icon icon-slider-arrow-down"></i>
+	        </div>
+	    </div>
+	    <div class="wrap-title-bg-slider">
+	        <div class="title-bg-slider" title-bg-slider>
+	            <div class="swiper-wrapper">
+	                <div class="swiper-slide">
+	                    <div class="title-bg-slider__image" style="background-image: url('./images/content/title-1.jpg')">
+	                    </div>
+	                </div>
+	                <div class="swiper-slide">
+	                    <div class="title-bg-slider__image"  style="background-image: url('./images/content/title-2.jpg')">
+	                    </div>
+	                </div>           
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	
+	<!-- End title slider -->
+
+	<main>
+		
+		<!-- Block other info -->
+		<section class="other-info block-line blue-line" data-set-menu>
+			<div class="section section__ident">
+				<div class="section__content">
+					<div class="section__title mod">
+						<h2 title-line>
+							<a href="#" class="link-arrow">Заголовок блока</a>
+						</h2>
+						<p>
+							Distinctively drive B2C sources for maintainable collaboration and idea-sharing. <br>
+							Synergistically e-enable optimal functionalities with client-focused outsourcing. <br>
+							Completely actualize resource-leveling quality vectors through open-source catalysts.
+						</p>
+					</div>
+
+
+					<div class="other-info__items-wrap">
+						<div class="row">
+							<div class="col-lg-4 col-md-6 col-sm-6">
+								<div class="other-info__item">
+									<hr class="decor mt-0 mb-20" />
+									<p>
+										Команда успешно работает с производителями из трех частей света: Европа (Россия, Швейцария, Италия, Германия, Турция, Бельгия, Нидерланды, Польша, Литва, Болгария), Азия (Китай, Тайвань), Северная Америка (США), организовывает морские, автомбильные, авиа и мультимодальные перевозки.
+									</p>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6 col-sm-6">
+								<div class="other-info__item">
+									<hr class="decor mt-0 mb-20" /> 
+									<p>
+										Команда успешно работает с производителями из трех частей света: Европа (Россия, Швейцария, Италия, Германия, Турция, Бельгия, Нидерланды, Польша, Литва, Болгария), Азия (Китай, Тайвань), Северная Америка (США);
+									</p>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6 col-sm-6">
+								<div class="other-info__item">
+									<hr class="decor mt-0 mb-20" />
+									<p>
+										Команда успешно работает с производителями из трех частей света: Европа (Россия, Швейцария, Италия, Германия, Турция, Бельгия, Нидерланды, Польша, Литва, Болгария), Азия (Китай, Тайвань), Северная Америка (США), организовывает морские, автомбильные.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+
+					<div class="row">
+						<div class="col-lg-4 col-md-6 col-sm-6">
+							<div class="other-info__block">
+								<div class="other-info__block-content">
+									<div class="other-info__block-title">
+										<h4>
+											Название
+										</h4>
+									</div>
+									<p>
+										Благодаря работе команды в Беларуси в массовое потребление вошли лектронные тонометры и термометры.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6">
+							<div class="other-info__block">
+								<div class="other-info__block-content">
+									<div class="other-info__block-title">
+										<h4>
+											Название Название Название Название Название Название Название Название
+										</h4>
+									</div>
+									<p>
+										Благодаря работе команды в Беларуси в массовое потребление вошли лектронные тонометры и термометры. Благодаря работе команды в Беларуси в массовое потребление вошли лектронные тонометры и термометры. Благодаря работе команды в Беларуси в массовое потребление вошли лектронные тонометры и термометры. Благодаря работе команды в Беларуси в массовое потребление вошли лектронные тонометры и термометры.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6">
+							<div class="other-info__block">
+								<div class="other-info__block-content">
+									<div class="other-info__block-title">
+										<h4>
+											Название
+										</h4>
+									</div>
+									<p>
+										Благодаря работе команды в Беларуси в массовое потребление вошли лектронные тонометры и термометры. Благодаря работе команды в Беларуси в массовое потребление вошли лектронные тонометры и термометры.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section__aside"></div>
+			</div>
+		</section>
+		<!-- End block other info -->
+
+		<!-- Title slider -->
+		<div class="wrap-slider-info" data-set-menu>
+			<div class="slider-info" slider-info>
+				<div class="swiper-wrapper">
+					<!-- Slides -->
+					<div class="swiper-slide">
+						<div class="slider-info__item">
+							<section class="section">
+								<div class="section__content">
+									<h2 class="title">
+										Ценности компании ценности компании ценности компании <br>
+										Ценности компании ценности компании ценности компании <br>
+										Ценности компании ценности компании ценности компании <br>
+										Ценности компании ценности компании ценности компании <br>
+										Ценности компании ценности компании ценности компании <br>
+										Ценности компании ценности компании ценности компании
+									</h2>
+									<div class="txt">
+										<p>
+											Мелкий текст на одну или несколько строк, в зависимости от настроения <br>
+											Мелкий текст на одну или несколько строк, в зависимости от настроения <br>
+											Мелкий текст на одну или несколько строк, в зависимости от настроения <br>
+											Мелкий текст на одну или несколько строк, в зависимости от настроения <br>
+											Мелкий текст на одну или несколько строк, в зависимости от настроения <br>
+											Мелкий текст на одну или несколько строк, в зависимости от настроения <br>
+											Мелкий текст на одну или несколько строк, в зависимости от настроения <br>
+											Мелкий текст на одну или несколько строк, в зависимости от настроения
+										</p>
+									</div>
+								</div>
+								<div class="section__aside"></div>
+							</section>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="slider-info__item">
+							<section class="section">
+								<div class="section__content">
+									<h2 class="title">Ценности компании ценности компании <br> Ценности компании ценности компании </h2>
+									<div class="txt">
+										<p>Мелкий текст на одну или несколько строк, в зависимости от настроения</p>
+									</div>
+								</div>
+								<div class="section__aside"></div>
+							</section>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="slider-info__item">
+							<section class="section">
+								<div class="section__content">
+									<h2 class="title">Ценности компании</h2>
+									<div class="txt">
+										<p>
+											Мелкий текст на одну или несколько строк, в зависимости от настроения
+										</p>
+									</div>
+								</div>
+								<div class="section__aside"></div>
+							</section>
+						</div>
+					</div>
+					<!-- Slides -->
+				</div>
+				<div class="slider-info-btn-next">
+					<i class="my-icon icon-slider-arrow-upp"></i>
+				</div>
+				<div class="slider-info-btn-prev">
+					<i class="my-icon icon-slider-arrow-down"></i>
+				</div>
+			</div>
+			<div class="wrap-bg-slider-info">
+				<div class="bg-slider-info" bg-slider-info>
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="bg-slider-info__image" style="background-image: url('./images/content/title-3.jpg')">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="bg-slider-info__image" style="background-image: url('./images/content/title-2.jpg')">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="bg-slider-info__image" style="background-image: url('./images/content/title-1.jpg')">
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- End title slider -->
+
+		<section class="history-devel block-line blue-line" data-fixed-bot-mod-menu>
+			<div class="section section__ident">
+				<div class="section__content">
+					<div class="section__title mod">
+						<h2 title-line>
+							<a href="#" class="link-arrow">История развития</a>
+						</h2>
+						<p>
+							<b class="txt-blue">Команда alt</b> – это профессионалы более чем с 20-летним опытом. За эти годы команда вывела на рынок* <br>
+							много новых и сейчас уже очень популярных брендов. alt является их эксклюзивным дистрибьютором.
+						</p>
+					</div>
+		
+					<div class="history-devel__content">
+		
+						<div class="history-devel__item">
+							<div class="year">
+								2017
+							</div>
+							<div class="decor">
+								<span></span>
+							</div>
+							<div class="txt txt-md-20 lh-12">
+								медицинская техника <br>
+								<b>Microlife</b>
+							</div>
+						</div>
+		
+						<div class="history-devel__item">
+							<div class="year">
+								2015
+							</div>
+							<div class="decor">
+								<span></span>
+							</div>
+							<div class="txt txt-md-20 lh-12">
+								детская косметика <b>Bubchen</b>,
+								детские аксессуары и товары
+								для кормления <b>NUK</b>
+							</div>
+						</div>
+		
+						<div class="history-devel__item">
+							<div class="year">
+								2012
+							</div>
+							<div class="decor">
+								<span></span>
+							</div>
+							<div class="txt txt-md-20 lh-12">
+								детские развивающие игрушки
+								и аксессуары <b>PlayGro</b>, детские
+								аксессуары и товары для 
+								кормления <b>Dr. Brawn</b>, 
+								гигиенические товары <b>TENA</b>
+							</div>
+						</div>
+		
+						<div class="history-devel__item">
+							<div class="year">
+								1997
+							</div>
+							<div class="decor">
+								<span></span>
+							</div>
+							<div class="txt txt-md-20 lh-12">
+								медицинские товары
+								<b>Prolife</b>, аксессуары для мам
+								и детей Happy Care
+							</div>
+						</div>
+		
+						<div class="history-devel__item">
+							<div class="year">
+								2009
+							</div>
+							<div class="decor">
+								<span></span>
+							</div>
+							<div class="txt txt-md-20 lh-12">
+								инновационные приборы
+								для младенцев <b>AGU</b>
+							</div>
+						</div>
+		
+						<div class="history-devel__item">
+							<div class="year">
+								2010
+							</div>
+							<div class="decor">
+								<span></span>
+							</div>
+							<div class="txt txt-md-20 lh-12">
+								товары для новорожденных
+								и мам <b>Bebe D`or</b>
+							</div>
+						</div>
+		
+					</div>
+		
+					<div class="row">
+						<div class="col-xs-12">
+							<p class="highlight bg-gray">
+								<i>
+									* Сноска — Quickly build multimedia based e-business through B2B systems. Globally utilize strategic systems through proactive portals. Uniquely redefine scalable leadership skills for B2B testing procedures.
+								</i>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="section__aside">
+					
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="foot">
+		<div class="foot__content">
+			<div class="foot__col">
+				<div class="foot__txt">
+					<p>
+						© ALT 2017. All rights reserved.
+					</p>
+					<p>
+						ООО «Актив Лайф Технолоджи»
+					</p>
+					<p>
+						УНП: 192643302
+					</p>
+				</div>
+			</div>
+			<div class="foot__col">
+				<div class="foot__contact-info">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="foot__social">
+								<div class="menu__social def">
+									<ul>
+										<li>
+											<a href="#">
+												<i class="fa fa-vk"></i>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<i class="fa fa-facebook-square"></i>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<i class="fa fa-instagram"></i>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="text-left foot__contact-btn">
+								<a href="#" class="btn border-white btn-icon text-uppercase">
+									<i class="fa fa-map-marker mr-5"></i>
+									Контакты
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="foot__col">
+				<div class="foot__logo">
+					<a href="#">
+						<i class="my-icon icon-logo-company-creator"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="./js/jquery-2.2.4.min.js"></script>
+	<script src="./js/jquery.transit.min.js"></script>
+	<script src="./js/snap.svg-min.js"></script>
+	<script src="./js/smooth-scroll.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/jquery.scrolly.js"></script>
+	<script src="./js/swiper.js"></script>
+	<script src="./js/bootstrap-select.min.js"></script>
+	<script src="./js/jquery.mousewheel.js"></script>
+	<script src="./js/jquery.jscrollpane.min.js"></script>
+	<script src="./js/init.js"></script>
+</body>
+</html>

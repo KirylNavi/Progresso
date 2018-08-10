@@ -1,123 +1,376 @@
-input {
-	font-family: 'Helvetica';
+*:focus,
+*:active,
+.bootstrap-select .dropdown-toggle:focus {
+	outline: 0 !important;
 }
 
-.form-control {
-	display: block;
-	width: 100%;
-	height: 34px;
-	line-height: 34px;
+input[type="text"],
+input[type="email"],
+input[type="phone"],
+input[type="password"] {
+	font-weight: @font-roman;
 	font-size: 14px;
-	padding: 0 12px;
-	color: #555;
-	border: 1px solid #999;
-	border-radius: 0;
-	font-weight: @font-light;
-	font-family: 'Helvetica';
-	transition: all .25s linear;
-	border-radius: 5px;
-
-	&:hover,
-	&:focus {
-		box-shadow: 0 0 5px 0 rgba(51, 51, 51, .5);
-	}
-
-	&.md {
-		font-size: 16px;
-		height: 44px;
-		line-height: 44px;
-	}
-
-	&.lg {
-		border-radius: 15px;
-		font-size: 16px;
-		height: 56px;
-		line-height: 56px;
-	}
+	color: @color-black;
+	border-radius: 20px;
+	border: 1px solid @color-blue;
+	padding: 16.5px 25px;
+	line-height: 25px;
 }
 
-.border-rad-lg {
-	border-radius: 20px !important;
+textarea {
+	font-weight: @font-roman;
+	font-size: 14px;
+	color: @color-black;
+	border-radius: 20px;
+	border: 1px solid @color-blue;
+	padding: 16.5px 25px;
+	line-height: 16px;
+	resize: none;
+}
+
+label {
+	display: block;
+	font-weight: @font-bold;
+	font-size: 16px;
+	color: @color-black;
+	margin-bottom: 5px;
+	margin-left: 15px;
+}
+
+.required {
+	margin-left: 5px;
+	color: @color-red;
 }
 
 .form-group {
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 
-.form {
-	&-horizontal {
-		.form-group {
-			width: 100%;
+.input-form {
+	width: 100%;
+}
+
+.dropdown-menu {
+	padding: 0;
+
+	.active > a, 
+	.active > a:hover, 
+	.active > a:focus {
+		background-color: @color-gray-3;
+	}
+
+	.bs-searchbox {
+		padding: 0;
+		.form-control {
+			padding: 10px 20px;
 		}
 	}
 
-	&-inline {
-		.form-group {
-			width: auto;
-			display: inline-block;
+	li {
+		&:before {
+			display: none;
 		}
-	}
-}
 
-.checkbox {
-	cursor: pointer;
-	-moz-user-select: none;
-	-khtml-user-select: none;
-	user-select: none; 
+		a {
+			border-bottom: 1px solid @color-gray-3;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
 
-	&.vertical-align {
-		position: relative;
-		top: 9px;
-	}
-
-	input {
-		display: none;
-
-		&:checked + span {
-			&:before {
-				background-color: #333;
+		&:last-child {
+			a {
+				border-bottom-width: 0;
 			}
 		}
 	}
 
-	span {
 
-		font-family: 'Helvetica';
-		letter-spacing: 0.5px;
-		font-size: 15px;
-		color: #333;
+
+	.text {
+		font-size: 14px;
+	}
+}
+
+.bootstrap-select.filter {
+	width: 100% !important;
+
+	.filter-option {
+		font-size: 17px;
+		font-weight: @font-black;
+		white-space: normal;
+		line-height: 1;
+		display: flex !important;
+		height: 34px;
+		align-items: center;
+	}
+
+	.dropdown-menu {
+		box-shadow: 0 0 0 0;
+		border-radius: 0;
+		border-width: 0;
+		right: 0;
+	}
+
+	&.btn-group  {
+		.dropdown-menu {
+			li {
+				a {
+					padding: 8px 20px;
+					border-bottom-color: @color-gray-2;
+
+					&:hover {
+						color: @color-white;
+						background-color: @color-blue;
+					}
+
+					span.text {
+						height: 36px;
+						line-height: 1.2;
+						white-space: normal;
+						align-items: center;
+						font-size: 15px;
+						font-weight: 200;
+						display: flex;
+					}
+				}
+			}
+		} 
+	}
+
+	.caret {
+		color: @color-blue;
+	}
+
+	.btn {
+		padding-left: 20px;
+		cursor: pointer;
+		border-radius: 0;
+		border-width: 0;
+		background-color: @color-white;
+		color: @color-black;
+		text-transform: inherit;
+		line-height: 1;
+		font-size: 0;
+		padding-top: 14px;
+		padding-bottom: 12px;
 
 		&:before {
-			content: "";
-			width: 9px;
-			height: 9px;
-			display: inline-block;
-			border: 2px solid @color-white;
-			box-shadow: 0 0 0 1px #333;
-			border-radius: 3px;
-			margin-right: 5px;
-			position: relative;
-			background-color: transparent;
-			top: 1px;
-			transparent: all .25s linear;
+			display: none;
 		}
 	}
-	
 }
 
 
-textarea.form-control {
-	height: auto;
-	padding: 10px 15px;
+.form-table {
+	border: 1px solid @color-gray-3;
+	border-radius: 25px;
 
-	&.md {
-		line-height: 1.2;
-		height: 150px;
+	.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+		width: 100%;
 	}
-	
-	&.lg {
-		height: 212px;
-		line-height: 1.2;
+
+	.bootstrap-select {
+
+		.btn[data-change="true"] {
+
+			.filter-option {
+				color: @color-black;
+			}
+
+		}
+
+		.dropdown-menu {
+			border-radius: 0;
+		}
+		.btn {
+			border-width: 0;
+			border-radius: 0;
+			font-size: 0;
+			padding: 16.5px 20px;
+			cursor: pointer;
+
+			&:hover {
+				color: @color-gray-3;
+			}
+
+			.filter-option {
+				letter-spacing: .5px;
+				font-size: 16px;
+				font-weight: @font-roman;
+				line-height: 25px;
+				color: @color-gray-3;
+			}
+
+			&:before {
+				display: none;
+			}
+		}
+	}
+
+	input[type="text"],
+	input[type="email"],
+	input[type="password"],
+    input[type="phone"],
+	textarea {
+		background-color: transparent;
+		padding-left: 20px;
+		padding-right: 20px;
+		font-weight: @font-roman;
+		border-radius: 0;
+		border-width: 0;
+		border-bottom: 1px solid @color-gray-3;
+        position: relative;
+        z-index: 10;
+	}
+
+	.bootstrap-select {
+		border-bottom: 1px solid @color-gray-3;
+	}
+
+	label {
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		z-index: 0;
+		margin: 0;
+		line-height: 100%;
+		line-height: 60px;
+		padding: 0 20px;
+		font-weight: @font-roman;
+		color: @color-gray-3;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+	}
+
+	.form-group {
+      margin: 0;
+      position: relative;
+
+		&.active-elem {
+			label {
+				opacity: 0;
+			}
+		}
+	}
+
+	.row {
+		margin: 0;
+
+		> div {
+			padding: 0;
+		}
+	}
+
+	> .row {
+		&:last-child {
+			> div {
+				&:last-child {
+					input[type=text], 
+					input[type=email], 
+					input[type=password], 
+					textarea {
+						border-bottom-width: 0;
+					}
+				}
+			}
+		}
+	} 
+
+	.br-lg {
+		border-right: 1px solid @color-gray-3 !important;
 	}
 }
 
+.bootstrap-select {
+	position: relative;
+
+	&.select-mod {
+		width: 100% !important;
+
+		.bs-searchbox {
+			input[type="text"] {
+				border-width: 0 0 1px 0;
+				border-radius: 0;
+			}
+		}
+
+		.btn {
+			border-radius: 18px;
+			cursor: pointer;
+			color: @color-black;
+			font-size: 0;
+			padding: 17px 40px;
+
+			&:hover {
+				background-color: #f5f5f5;
+			}
+
+			.caret {
+				color: @color-blue;
+				right: 40px;
+			}
+
+			.filter-option  {
+				font-weight: @font-bold;
+				font-size: 24px;
+				text-transform: initial;
+				line-height: 1;
+			}
+
+			&:hover {
+				color: @color-black;
+			}
+			&:before {
+				display: none;
+			}
+		}
+	}
+}
+
+@media all and (max-width: @media-lg) {
+	.form-table {
+		.br-lg {
+			border-right-width: 0 !important;
+		}
+
+		.br-md {
+			border-right: 1px solid @color-gray-3 !important;
+		}
+	}
+}
+
+@media all and (max-width: @media-md) {
+	.form-table {
+		.br-md {
+			border-right-width: 0 !important;
+		}
+
+		.br-sm {
+			border-right: 1px solid @color-gray-3 !important;
+		}
+	}
+}
+
+@media all and (max-width: @media-sm) {
+	.form-table {
+		.br-sm {
+			border-right-width: 0 !important;
+		}
+	}
+
+	.bootstrap-select {
+		&.select-mod {
+			.btn {
+				padding-left:  35px;
+				padding-right: 35px;
+
+				.caret {
+					right: 25px;
+				}
+			}
+		} 
+	}
+}

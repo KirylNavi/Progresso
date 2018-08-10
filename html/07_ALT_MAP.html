@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	//= meta/meta.html
+	<title>Alt map</title>
+
+	//= components/head.html
+</head>
+<body class="page-map">
+
+	<!--Header map-->
+	<div class="mob-menu">
+		<div class="mob-menu__head">
+			<div class="mob-menu__head-lang">
+				<a class="active" href="#">EN</a>
+				<a href="#">RU</a>
+			</div>
+			<div class="mob-menu__head-logo">
+				<a href="#" class="logo-first">
+					<img src="./images/logo-mobile.svg" alt="Logo mobile first">
+				</a>
+				<a href="#" class="logo-second">
+					<img src="./images/logo.svg" alt="Logo mobile second">
+				</a>
+			</div>
+			<div class="mob-menu__head-btn">
+			<span class="mob-btn" mob-btn-menu>
+				<span></span>
+				<span></span>
+				<span></span>
+			</span>
+			</div>
+		</div>
+		<div class="mob-menu__content">
+			<div class="contain">
+				<ul class="mob-menu__list">
+					<li>
+						<a href="#">Главная</a>
+					</li>
+					<li>
+						<a href="#">Новости</a>
+					</li>
+					<li>
+						<a href="#">Карьера</a>
+					</li>
+					<li>
+						<a href="#">Бренды</a>
+					</li>
+					<li>
+						<a href="#">Партнерам</a>
+					</li>
+					<li>
+						<a href="#">Контакты</a>
+					</li>
+					<li class="social">
+						<div class="menu__social white">
+							<ul>
+								<li>
+									<a href="#">
+										<i class="fa fa-vk"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-facebook"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-instagram"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-map-marker"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+
+
+	<!--End header map-->
+
+
+	<div id="map"></div>
+
+	<header class="head-map">
+
+		<div class="head-map__contain">
+
+			<div class="head-map__logo">
+				<a href="#">
+					<img src="./images/logo-head-map.svg" alt="Logo">
+				</a>
+			</div>
+
+			<div class="head-map__btn-back">
+				<a href="#">
+					<i class="my-icon icon-btn-arrow-left-new mr-5"></i>
+					<b>
+						Вернуться
+					</b>
+				</a>
+			</div>
+
+			<div class="head-map__btn-menu">
+				<span class="btn-mob-menu" mob-btn-menu="">
+					<span></span>
+					<span></span>
+					<span></span>
+				</span>
+			</div>
+
+		</div>
+
+	</header>
+
+    <!-- Contact modal -->
+    <div class="modal fade" id="modalContact" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    <i class="my-icon icon-close"></i>
+                </button>
+                <div class="modal-body">
+                    <form>
+
+                        <div class="form-table" form-table>
+
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="form-group">
+                                        <input class="input-form" type="text">
+                                        <label>Имя<span class="required">*</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="form-group">
+                                        <input class="input-form" type="phone">
+                                        <label>Телефон</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="form-group">
+                                        <textarea rows="5" class="input-form"></textarea>
+                                        <label>Сообщение<span class="required">*</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-50">
+                            <div class="row">
+                                <div class="col-sm-8 col-sm-offset-2">
+                                    <button class="btn btn-md btn-icon btn-full btn-blue btn-contact-form-js" >
+                                        Отправить
+                                        <i class="my-icon icon-btn-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End contact modal-->
+
+    <!--Contact form send success-->
+    <div class="modal fade modal-contact-success" id="modalContactSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="contact-success txt-center">
+                        <div class="contact-success__icon">
+                            <i class="my-icon icon-success"></i>
+                        </div>
+                        <h3 class="txt-blue">
+                            Спасибо!
+                        </h3>
+                        <h3>
+                            Ваше сообщение отправлено!
+                        </h3>
+                        <h3>
+                            Мы ответим вам в кратчайшие сроки.
+                        </h3>
+                        <div class="row">
+                            <div class="col-sm-6 col-sm-offset-3">
+                                <div class="contact-success__block-btn">
+                                    <span class="btn btn-md btn-full" data-dismiss="modal" aria-hidden="true">
+                                        Понятно
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End contact form send success-->
+	
+	//= components/foot.html
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjqLzQETZ3A6Q0sPgnV7FkxGjBGZlZTzU&callback=initMap" async defer></script>
+</body>
+</html>

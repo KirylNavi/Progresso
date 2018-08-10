@@ -1,0 +1,354 @@
+#map {
+	position: fixed !important;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.gm-style-iw {
+
+	overflow: visible !important;
+
+
+
+	> div {
+		background-color: rgba(255, 255, 255, .92);
+		border-radius: 25px;
+		padding: 50px 0;
+		width: 600px;
+		font-weight: @font-light;
+		font-size: 14px;
+		color: @color-gray;
+		box-shadow: 8px 8px 20px 0 rgba(0,0,0,.1);
+		overflow: visible !important;
+        max-height: 100% !important;
+
+		> div {
+			overflow: visible !important;
+		}
+	}
+
+	~ img {
+		width: 26px !important;
+		height: 26px !important;
+		top: 40px !important;
+		right: 70px !important;
+	}
+
+	+ div {
+		width: 26px !important;
+		height: 26px !important;
+		top: 40px !important;
+		right: 70px !important;
+		opacity: 1 !important;
+
+
+		&:hover {
+
+			&:after {
+				color: rgba(186, 186, 186, .7);
+			}
+
+		}
+
+		&:after {
+			content: '\0068';
+			font-family: 'Glyphter';
+			font-size: 26px;
+			color: @color-gray-3;
+			transition: color .25s linear;
+		}
+		img {
+			display: none;
+		}
+	}
+
+	.win-info {
+		font-family: @font;
+		line-height: 1.6;
+		position: relative;
+		z-index: 10;
+
+        &__block-btn {
+          text-align: center;
+          margin-top: 30px;
+        }
+
+		&__contain {
+			position: relative;
+			z-index: 11;
+		}
+
+		&__decor {
+			position: absolute;
+			left: -160px;
+			top: -140px;
+			width: 255px;
+			height: 255px;
+			background-position: 50% 50%;
+			background-size: cover !important;
+			background-repeat: no-repeat;
+			mask: url(../images/mask-number.svg);
+			-webkit-mask: url(../images/mask-number.svg) no-repeat center center/contain;
+			z-index: 20;
+		}
+
+		&__decor-shadow {
+			position: absolute;
+			z-index: 15;
+			z-index: 12;
+			left: -177px;
+			top: -158px;
+			width: 300px;
+			height: 300px;
+			background: url("../images/decor-map-label.png") no-repeat 50% 50% / contain;
+		}
+
+		&__title {
+			padding-left: 100px;
+			border-bottom: 1px solid @color-blue;
+		}
+
+		&__offices {
+			margin-left: 100px;
+		}
+
+		&__offices-item {
+			display: flex;
+			padding: 15px 25px 10px 0;
+			border-bottom: 1px solid @color-gray-5;
+
+			&:last-child {
+				border-bottom-width: 0;
+			}
+
+
+			.num-office {
+				font-size: 18px;
+				font-weight: @font-bold;
+				color: @color-black;
+				white-space: nowrap;
+			}
+
+			.info-office {
+				padding-left: 20px;
+				font-size: 14px;
+				padding-top: 3px;
+
+				&__phones {
+					a {
+						line-height: 1;
+						display: inline-block;
+						margin-right: 20px;
+						margin-bottom: 5px;
+
+						&:last-child {
+							margin-right: 0;
+						}
+					}
+				}
+
+				&__name {
+					margin-bottom: 5px;
+				}
+			}
+		}
+	}
+
+	.name-city {
+		margin-bottom: 5px;
+	}
+
+	.title-txt {
+		font-size: 14px;
+		display: block;
+		margin: 0;
+		padding-bottom: 15px;
+	}
+}
+
+@media all and (max-width: @media-lg) {
+	.gm-style-iw {
+
+		+ div {
+			top: 40px !important;
+
+		}
+
+		> div {
+			width: 450px;
+			padding: 35px 0;
+		}
+
+		.win-info {
+
+          &__block-btn {
+            margin-top: 20px;
+          }
+
+			&__decor {
+				width: 155px;
+				height: 155px;
+				left: -72px;
+				top: -77px;
+			}
+
+			&__decor-shadow {
+				left: -80px;
+				top: -90px;
+				width: 180px;
+				height: 180px;
+			}
+
+		}
+
+		.name-city {
+			font-size: 24px;
+		}
+
+		.title-txt {
+			padding-bottom: 22px;
+		}
+	}
+}
+
+@media all and (max-width: @media-md) {
+	.gm-style-iw {
+
+		> div {
+			padding: 30px 0 25px;
+		}
+
+		~ img {
+			width: 20px!important;
+			height: 20px!important;
+			top: 30px!important;
+			right: 60px!important;
+		}
+
+		+ div {
+			width: 20px !important;
+			height: 20px !important;
+			top: 30px !important;
+			right: 60px !important;
+
+			&:after {
+				font-size: 20px;
+			}
+		}
+
+		.name-city {
+			font-size: 18px;
+			margin-bottom: 3px;
+		}
+
+		.title-txt {
+			font-size: 12px;
+			padding-bottom: 15px;
+		}
+
+		> div {
+			width: 340px;
+			border-radius: 15px;
+		}
+
+		.win-info {
+
+            &__block-btn {
+              margin-top: 30px;
+            }
+
+			&__decor {
+				width: 120px;
+				height: 120px;
+				left: -51px;
+				top: -61px;
+			}
+
+			&__decor-shadow {
+				width: 140px;
+				height: 140px;
+				left: -57px;
+				top: -71px;
+			}
+
+			&__offices {
+				margin-left: 70px;
+				max-height: 130px;
+				overflow-y: auto;
+			}
+
+			&__offices-item {
+				padding: 10px 15px 7px 0;
+
+				.num-office {
+					font-size: 14px;
+				}
+
+				.info-office {
+					font-size: 12px;
+					padding-top: 0;
+
+					&__phones {
+						a {
+							margin-right: 10px;
+							margin-bottom: 3px;
+						}
+					}
+				}
+
+			}
+
+		}
+
+	}
+}
+
+@media all and (max-width: @media-sm) {
+
+	.gm-style-iw {
+
+		.win-info {
+
+			&__decor {
+				left: 107px;
+				top: -102px;
+			}
+
+			&__decor-shadow {
+				left: 98px;
+				top: -109px;
+			}
+
+			&__title {
+				padding-left: 15px;
+			}
+
+			&__offices {
+				margin-left: 15px;
+				max-height: 92px;
+			}
+
+		}
+
+		> div {
+			width: 270px;
+		}
+
+	}
+
+}
+
+@media all and (max-width: @media-sm) {
+  .page-map,
+  .page-id-161 {
+    .modal.in .modal-dialog {
+      transform: translateY(0%);
+    }
+
+    .modal-dialog {
+      top: 10%;
+    }
+  }
+}

@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Alt brands</title>
+
+	<!-- Stylesheet -->
+	<link rel="stylesheet" href="./css/bootstrap.css">
+	<link rel="stylesheet" href="./css/bootstrap-select.css">
+	<link rel="stylesheet" href="./css/jquery.jscrollpane.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+	<link rel="stylesheet" href="./css/myIcons.css">
+	<link rel="stylesheet" href="./css/font-awesome.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+	<div class="mob-menu">
+		<div class="mob-menu__head">
+			<div class="mob-menu__head-lang">
+				<a class="active" href="#">EN</a>
+				<a href="#">RU</a>
+			</div>
+			<div class="mob-menu__head-logo">
+				<a href="#" class="logo-first">
+					<img src="./images/logo-mobile.svg" alt="Logo mobile first">
+				</a>
+				<a href="#" class="logo-second">
+					<img src="./images/logo.svg" alt="Logo mobile second">
+				</a>
+			</div>
+			<div class="mob-menu__head-btn">
+				<span class="mob-btn" mob-btn-menu>
+					<span></span>
+					<span></span>
+					<span></span>
+				</span>
+			</div>
+		</div>
+		<div class="mob-menu__content">
+			<div class="contain">
+				<ul class="mob-menu__list">
+					<li>
+						<a href="#">Главная</a>
+					</li>
+					<li>
+						<a href="#">Новости</a>
+					</li>
+					<li>
+						<a href="#">Карьера</a>
+					</li>
+					<li>
+						<a href="#">Бренды</a>
+					</li>
+					<li>
+						<a href="#">Партнерам</a>
+					</li>	
+					<li>
+						<a href="#">Контакты</a>
+					</li>
+					<li class="social">
+						<div class="menu__social white">
+							<ul>
+								<li>
+									<a href="#">
+										<i class="fa fa-vk"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-facebook"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-instagram"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-map-marker"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>	
+				</ul>
+			</div>
+			
+		</div>
+	</div>
+	
+	<header class="head">
+		<div class="section">
+			<div class="section__content">
+				
+				<div class="head__wrap">
+	
+					<div class="head__logo">
+						<a href="#" class="logo-mob__link">
+							<img src="./images/logo.svg" alt="Logo">
+						</a>
+					</div>
+	
+					<div class="head__breadcrumbs">
+						<ul>
+							<li>
+								<a href="#">Главная</a>
+							</li>
+							<li>
+								<a href="#">Новости</a>
+							</li>
+							<li>
+								<a href="#">Текущая новость</a>
+							</li>
+						</ul>
+					</div>
+	
+					<div class="head__btn-menu">
+						<span class="btn-mob-menu" mob-btn-menu>
+							<span></span>
+							<span></span>
+							<span></span>
+						</span>
+					</div>
+	
+					<div class="head__language">
+						<ul>
+							<li>
+								<a href="#">EN</a>
+							</li>
+							<li>
+								<a class="active" href="#">RU</a>
+							</li>
+						</ul>
+					</div>
+	
+				</div>
+	
+			</div>
+		</div>
+	</header>
+	
+	<div class="wrap-desktop-menu def" data-menu-desktop>
+		<div class="menu" >
+			<div class="menu__wrap">
+				<div class="menu__first">
+					<div class="menu__logo">
+						<a href="#">
+							<i class="my-icon icon-logo"></i>
+						</a>
+					</div>
+					<menu class="menu__list">
+						<li>
+							<a href="#">Главная</a>
+						</li>
+						<li>
+							<a href="#">Новости</a>
+						</li>
+						<li>
+							<a href="#">Карьера</a>
+						</li>
+						<li>
+							<a href="#">Бренды</a>
+						</li>
+						<li>
+							<a href="#">Партнерам</a>
+						</li>
+						<li>
+							<a href="#">Контакты</a>
+						</li>
+					</menu>
+					<div class="menu__social">
+						<ul>
+							<li>
+								<a href="#">
+									<i class="fa fa-vk"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fa fa-instagram"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fa fa-map-marker"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Title slider -->
+	<div class="main-title set-top-menu" data-set-menu>
+		<!-- Slides -->
+		<div class="swiper-slide">
+			<div class="main-title__item">
+				<section class="section">
+					<div class="section__content">
+						<h1 class="title mb-20">Заголовок крупный <br> на две строки</h1>
+						<p class="txt">Мелкий текст на одну или несколько строк, <br> в зависимости от настроения</p>
+						<div class="wrap-btn">
+							<a href="#" class="btn border-white text-uppercase">Узнать больше</a>
+						</div>
+					</div>
+					<div class="section__aside"></div>
+				</section>
+			</div>
+		</div>
+		<!-- Slides -->
+
+		<div class="wrap-title-bg-slider">
+			<div class="title-bg-slider">
+				<div class="swiper-wrapper">
+
+					<div class="swiper-slide">
+						<div class="title-bg-slider__image" style="background-image: url('./images/content/slider-brands.jpg')">
+						</div>
+					</div>    
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End title slider -->
+
+	<main>
+		<!-- Category brands -->
+		<section class="wrap-cat-brands block-line blue-line" data-set-menu>
+			<div class="section section__ident">
+				<div class="section__content">
+					<div class="section__title">
+						<h2 title-line>
+							Категории брендов
+						</h2>
+					</div>
+
+					<div class="cat-brands">
+						<div class="row">
+
+							<div class="col-lg-4 col-md-6 col-sm-6 col-sx-12">
+								<a href=".wrap-brands" class="cat-brands__item scroll-anchor">
+									<i class="my-icon icon-medical-equip"></i>
+									<span class="txt txt-md-20 text-uppercase">
+										<b>
+											Медицинская <br> техника для дома
+										</b>
+									</span>
+								</a>
+							</div>
+
+							<div class="col-lg-4 col-md-6 col-sm-6 col-sx-12">
+								<a href=".wrap-brands" class="cat-brands__item scroll-anchor">
+									<i class="my-icon icon-cosmetics"></i>
+									<span class="txt txt-md-20 text-uppercase">
+										<b>
+											Детская гигиена <br> и косметика
+										</b>
+									</span>
+								</a>
+							</div>
+
+							<div class="col-lg-4 col-md-6 col-sm-6 col-sx-12">
+								<a href=".wrap-brands" class="cat-brands__item scroll-anchor">
+									<i class="my-icon icon-toys-child"></i>
+									<span class="txt txt-md-20 text-uppercase">
+										<b>
+											Игрушки <br> для детей
+										</b>
+									</span>
+								</a>
+							</div>
+
+							<div class="col-lg-4 col-md-6 col-sm-6 col-sx-12">
+								<a href=".wrap-brands" class="cat-brands__item scroll-anchor">
+									<i class="my-icon icon-accessories"></i>
+									<span class="txt txt-md-20 text-uppercase">
+										<b>
+											Аксессуары для <br> кормления детей
+										</b>
+									</span>
+								</a>
+							</div>
+
+							<div class="col-lg-4 col-md-6 col-sm-6 col-sx-12">
+								<a href=".wrap-brands" class="cat-brands__item scroll-anchor">
+									<i class="my-icon icon-orthopedic-products"></i>
+									<span class="txt txt-md-20 text-uppercase">
+										<b>
+											Ортопедическая <br> продукция
+										</b>
+									</span>
+								</a>
+							</div>
+
+							<div class="col-lg-4 col-md-6 col-sm-6 col-sx-12">
+								<a href=".wrap-brands" class="cat-brands__item scroll-anchor">
+									<i class="my-icon icon-innovative-devices"></i>
+									<span class="txt txt-md-20 text-uppercase">
+										<b>
+											Инновационные <br> приборы для детей
+										</b>
+									</span>
+								</a>
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+				<div class="section__aside"></div>
+			</div>
+		</section>
+		<!-- End category brands -->
+
+		<!-- Slider benefits mod -->
+		<div class="wrap-slider-benefits mod" style="background-image: url('./images/content/slider-benefits-mod.jpg')" data-set-menu>
+			<div class="section">
+				<div class="section__content">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="slider-benefits__wrap-title">
+								<h2 class="slider-benefits__title h1 txt-white">
+									Заголовок блока слайдера с фото
+									Заголовок блока слайдера с фото
+								</h2>
+								<div class="slider-benefits-btn-next" data-copy>
+									<i class="my-icon icon-slider-arrow-upp"></i>
+								</div>
+								<div class="slider-benefits-btn-prev" data-copy>
+									<i class="my-icon icon-slider-arrow-down"></i>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="slider-benefits" slider-benefits>
+								<div class="swiper-wrapper">
+
+									<div class="swiper-slide">
+										<div class="slider-benefits__item">
+											<div class="slider-benefits__item-title">
+												<h3 class="title h2">
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum minus tempore illo quo, modi. Adipisci, ipsa doloremque, sit dolores voluptate laudantium provident quam enim temporibus dolore esse ab sint nemo necessitatibus quisquam error vero nostrum dolor ad, maiores. Consequatur qui ipsam hic, cum, necessitatibus voluptate quisquam suscipit eius cupiditate molestiae.
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum minus tempore illo quo, modi. Adipisci, ipsa doloremque, sit dolores voluptate laudantium provident quam enim temporibus dolore esse ab sint nemo necessitatibus quisquam error vero nostrum dolor ad, maiores. Consequatur qui ipsam hic, cum, necessitatibus voluptate quisquam suscipit eius cupiditate molestiae.
+												</h3>
+											</div>
+											<div class="slider-benefits__item-txt">
+												<p>
+													Monotonectally foster seamless e-tailers vis-a-vis turnkey supply chains. Dramatically exploit e-business users without distributed bandwidth. Distinctively network flexible manufactured products vis-a-vis user-centric e-business. Dramatically iterate real-time models for resource sucking mindshare. Authoritatively initiate extensible imperatives whereas reliable strategic theme areas.
+												</p>
+												<p>
+													Assertively extend multifunctional technology through revolutionary customer service. Competently e-enable installed base resources with wireless strategic theme areas. Credibly.
+												</p>
+												<p>
+													Monotonectally foster seamless e-tailers vis-a-vis turnkey supply chains. Dramatically exploit e-business users without distributed bandwidth. Distinctively network flexible manufactured products vis-a-vis user-centric e-business. Dramatically iterate real-time models for resource sucking mindshare. Authoritatively initiate extensible imperatives whereas reliable strategic theme areas.
+												</p>
+												<p>
+													Assertively extend multifunctional technology through revolutionary customer service. Competently e-enable installed base resources with wireless strategic theme areas. Credibly.
+												</p>
+												<p>
+													Monotonectally foster seamless e-tailers vis-a-vis turnkey supply chains. Dramatically exploit e-business users without distributed bandwidth. Distinctively network flexible manufactured products vis-a-vis user-centric e-business. Dramatically iterate real-time models for resource sucking mindshare. Authoritatively initiate extensible imperatives whereas reliable strategic theme areas.
+												</p>
+												<p>
+													Assertively extend multifunctional technology through revolutionary customer service. Competently e-enable installed base resources with wireless strategic theme areas. Credibly.
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="slider-benefits__item">
+											<div class="slider-benefits__item-title">
+												<h3 class="title h2">
+													Название <br> преимущества
+												</h3>
+											</div>
+											<div class="slider-benefits__item-txt">
+												<p>
+													Monotonectally foster seamless e-tailers vis-a-vis turnkey supply chains. Dramatically exploit e-business users without distributed bandwidth. Distinctively network flexible manufactured products vis-a-vis user-centric e-business. Dramatically iterate real-time models for resource sucking mindshare. Authoritatively initiate extensible imperatives whereas reliable strategic theme areas.
+												</p>
+												<p>
+													Assertively extend multifunctional technology through revolutionary customer service. Competently e-enable installed base resources with wireless strategic theme areas. Credibly.
+												</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="swiper-slide">
+										<div class="slider-benefits__item">
+											<div class="slider-benefits__item-title">
+												<h3 class="title h2">
+													Название <br> преимущества
+												</h3>
+											</div>
+											<div class="slider-benefits__item-txt">
+												<p>
+													Monotonectally foster seamless e-tailers vis-a-vis turnkey supply chains. Dramatically exploit e-business users without distributed bandwidth. Distinctively network flexible manufactured products vis-a-vis user-centric e-business. Dramatically iterate real-time models for resource sucking mindshare. Authoritatively initiate extensible imperatives whereas reliable strategic theme areas.
+												</p>
+												<p>
+													Assertively extend multifunctional technology through revolutionary customer service. Competently e-enable installed base resources with wireless strategic theme areas. Credibly.
+												</p>
+											</div>
+										</div>
+									</div>
+
+								</div>
+
+								<div class="slider-benefits-btn-next">
+									<i class="my-icon icon-slider-arrow-upp"></i>
+								</div>
+								<div class="slider-benefits-btn-prev">
+									<i class="my-icon icon-slider-arrow-down"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<!-- End slider benefits mod -->
+
+		<!-- Brands -->
+		<section class="wrap-brands block-line blue-line bg-gray" data-fixed-bot-mod-menu>
+			<div class="section section__ident">
+				<div class="section__content">
+					<div class="section__title">
+						<div class="row">
+							<div class="col-lg-9 col-md-6 col-sm-6">
+								<h2 title-line>
+									Бренды
+								</h2>
+							</div>
+							<div class="col-lg-3 col-md-6 col-sm-6">
+								<div class="wrap-select">
+									<select class="selectpicker filter">
+										<option>Медицинская техника для дома</option>
+										<option>Игрушки для детей</option>
+										<option>Аксессуары для кормления детей</option>
+										<option>Ортопедическая продукция</option>
+										<option>Игрушки для детей</option>
+										<option>Аксессуары для кормления детей</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="brands">
+						<div class="row">
+
+							<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+								<a href="#" class="brands__item" style="background-image: url('./images/content/brands-bg-1.jpg')">
+									<span class="brands__item-firm" style="background-image: url('./images/firms/askona-white.png');"></span>
+								</a>
+							</div>
+
+							<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+								<a href="#" class="brands__item" style="background-image: url('./images/content/brands-bg-2.jpg')">
+									<span class="brands__item-firm" style="background-image: url('./images/firms/campina-white.png');"></span>
+								</a>
+							</div>
+
+							<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+								<a href="#" class="brands__item" style="background-image: url('./images/content/brands-bg-3.jpg')">
+									<span class="brands__item-firm" style="background-image: url('./images/firms/dyntec-white.png');"></span>
+								</a>
+							</div>
+
+							<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+								<a href="#" class="brands__item" style="background-image: url('./images/content/brands-bg-4.jpg')">
+									<span class="brands__item-firm" style="background-image: url('./images/firms/mckesson-white.png');"></span>
+								</a>
+							</div>
+
+
+							<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+								<a href="#" class="brands__item" style="background-image: url('./images/content/brands-bg-5.jpg')">
+									<span class="brands__item-firm" style="background-image: url('./images/firms/strepsils-white.png');"></span>
+								</a>
+							</div>
+
+							<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+								<a href="#" class="brands__item" style="background-image: url('./images/content/brands-bg-6.jpg')">
+									<span class="brands__item-firm" style="background-image: url('./images/firms/pharmstandard-white.png');"></span>
+								</a>
+							</div>
+
+							<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+								<a href="#" class="brands__item" style="background-image: url('./images/content/brands-bg-7.jpg')">
+									<span class="brands__item-firm" style="background-image: url('./images/firms/roche-white.png');"></span>
+								</a>
+							</div>
+
+							<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+								<a href="#" class="brands__item" style="background-image: url('./images/content/brands-bg-8.jpg')">
+									<span class="brands__item-firm" style="background-image: url('./images/firms/roche-white.png');"></span>
+								</a>
+							</div>
+
+
+						</div>
+
+						<div class="brands__btn">
+							<a href="#" class="btn">Показать больше</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End brands -->
+	</main>
+
+	<footer class="foot">
+		<div class="foot__content">
+			<div class="foot__col">
+				<div class="foot__txt">
+					<p>
+						© ALT 2017. All rights reserved.
+					</p>
+					<p>
+						ООО «Актив Лайф Технолоджи»
+					</p>
+					<p>
+						УНП: 192643302
+					</p>
+				</div>
+			</div>
+			<div class="foot__col">
+				<div class="foot__contact-info">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="foot__social">
+								<div class="menu__social def">
+									<ul>
+										<li>
+											<a href="#">
+												<i class="fa fa-vk"></i>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<i class="fa fa-facebook-square"></i>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<i class="fa fa-instagram"></i>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="text-left foot__contact-btn">
+								<a href="#" class="btn border-white btn-icon text-uppercase">
+									<i class="fa fa-map-marker mr-5"></i>
+									Контакты
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="foot__col">
+				<div class="foot__logo">
+					<a href="#">
+						<i class="my-icon icon-logo-company-creator"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="./js/jquery-2.2.4.min.js"></script>
+	<script src="./js/jquery.transit.min.js"></script>
+	<script src="./js/snap.svg-min.js"></script>
+	<script src="./js/smooth-scroll.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/jquery.scrolly.js"></script>
+	<script src="./js/swiper.js"></script>
+	<script src="./js/bootstrap-select.min.js"></script>
+	<script src="./js/jquery.mousewheel.js"></script>
+	<script src="./js/jquery.jscrollpane.min.js"></script>
+	<script src="./js/init.js"></script>
+</body>
+</html>

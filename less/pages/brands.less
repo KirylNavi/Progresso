@@ -1,0 +1,203 @@
+.cat-brands {
+	&__item {
+		height: 200px;
+		background-color: @color-blue;
+		margin-bottom: 35px;
+		position: relative;
+		padding: 0 40px 0;
+		display: block;
+		border-width: 0;
+
+		&:after {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 100%;
+			width: 100%;
+			background-color: @color-white;
+			z-index: 5;
+			opacity: 0;
+			transition: all .25s linear;
+		}
+
+		&:hover {
+			&:after {
+				opacity: .2;
+			}
+		}
+
+		.my-icon {
+			position: absolute;
+			color: @color-white;
+			font-size: 140px;
+			top: 50%;
+			transform: translateY(-50%);
+			line-height: 140px;
+			right: 40px;
+			height: 140px;
+			opacity: .3;
+			z-index: 1;
+		}
+
+		.txt {
+			color: @color-white;
+			position: absolute;
+			z-index: 10;
+			display: block;
+			bottom: 40px;
+			left: 40px;
+			right: 40px;
+		}
+	}
+}
+
+.wrap-brands {
+	overflow: visible;
+}
+
+.win,
+.linux {
+	.cat-brands {
+		&__item {
+			.my-icon {
+				&:before {
+					position: relative;
+					top: 20px;
+				}
+			}
+		}
+	}
+}
+
+.brands {
+
+	&__btn {
+		text-align: center;
+		margin-top: 15px;
+	}
+
+	&__item {
+		width: 100%;
+		padding-top: 100%;
+		display: block;
+		border-width: 0;
+		background-position: 50% 50%;
+		background-size: cover !important;
+		background-repeat: no-repeat;
+		position: relative;
+		margin-bottom: 35px;
+
+		&:after,
+		&:before {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 100%;
+			width: 100%;
+			background-color: @color-blue;
+			opacity: .6;
+			z-index: 5;
+		}
+
+		&:before {
+			background-color: @color-white;
+			z-index: 6;
+			opacity: 0;
+			transition: all .2s linear;
+		}
+
+		&:hover {
+			&:before {
+				opacity: .6;
+			}
+		}
+	}
+
+	&__item-firm {
+		position: absolute;
+		z-index: 10;
+		width: 200px;
+		height: 100px;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		background-size: contain !important;
+	}
+}
+
+.wrap-brands {
+	.section {
+		&__title {
+			
+		}
+	}
+}
+
+@media all and (max-width: @media-sm) {
+
+	.wrap-brands {
+		.section__title {
+			h2 {
+				margin-bottom: 20px;
+			}
+		}
+	}
+
+	.cat-brands {
+		&__item {
+			height: 180px;
+		}
+
+		&__item {
+			.my-icon {
+				font-size: 120px;
+				line-height: 120px;
+				height: 120px;
+			}
+
+			.txt {
+				left: 30px;
+				right: 30px;
+				bottom: 25px;
+			}
+		}
+	}
+
+	.win,
+	.linux {
+		.cat-brands {
+			&__item {
+				.my-icon {
+					&:before {
+						position: relative;
+						top: 15px;
+					}
+				}
+			}
+		}
+	}
+	.brands {
+		.row {
+			margin-left: -10px;
+			margin-right: -10px;
+
+			> div {
+				padding-right: 10px;
+				padding-left: 10px;
+			}
+		}
+
+		&__item {
+			margin-bottom: 20px;
+		}
+		&__item-firm {
+			padding-top: 30%;
+			height: auto;
+			width: 70%;
+		}
+	}
+}

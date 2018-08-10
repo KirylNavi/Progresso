@@ -1,0 +1,320 @@
+.main-title {
+	height: 570px;
+	position: relative;
+	color: @color-white;
+
+	&__item {
+		padding-top: 215px;
+
+		.wrap-btn {
+			margin-top: 30px;
+		}
+
+		.txt {
+			display: block;
+			max-height: 6em;
+			overflow: hidden;
+		}
+
+		.title {
+			display: block;
+			color: @color-white;
+			line-height: 1.1;
+			max-height: 2.2em;
+			overflow: hidden;
+		}
+	}
+}
+
+.title-slider {
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+
+	.swiper-slide {
+		height: 100%;
+	}
+
+	.swiper-btn-next,
+	.swiper-btn-prev {
+		display: inline-block;
+		font-size: 30px;
+		position: absolute;
+		top: 50%;
+		right: 60px;
+		z-index: 10;
+		cursor: pointer;
+		transform: translateY(-15px);
+		transition: opacity .25s linear;
+		&:hover {
+			opacity: .6;
+		}
+	}
+
+	.swiper-btn-next {
+		margin-top: -50px;
+	}
+
+	.swiper-btn-prev {
+		margin-bottom: -50px;
+	}
+}
+
+[title-slider] {
+	.section__content {
+		padding-right: 60px;
+	}
+}
+
+.main-title.brand {
+
+	.brand {
+		&__title {
+			display: flex;
+			width: 100%;
+			justify-content: space-between;
+		}
+
+		&__title-firm {
+			flex-shrink: 0;
+			margin-left: 50px;
+            width: 300px;
+            text-align: right;
+
+            img {
+              height: 80px;
+            }
+		}
+	}
+	.title-bg-slider {
+		&:after {
+			background: url("../images/title-brand-decor-desk.png") no-repeat 50% 50%;
+			background-size: cover !important;
+		}
+
+		&__image {
+			margin-left: 0;
+
+			&:after {
+				display: none;
+			}
+		}
+	}
+}
+
+.title-bg-slider {
+	&:after {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		background: url('../images/title/bg-main-title-desktop.png') no-repeat 0% 0%;
+		background-size: auto 100%;
+		z-index: 10;
+	}
+	&__image {
+		display: block;
+		margin-left: 275px;
+		height: 570px;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover !important;
+		position: relative;
+
+		&:after {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, .4);
+			z-index: 5;
+		}
+	}
+}
+
+.wrap-title-bg-slider {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+}
+
+@media all and (max-width: @media-lg) {
+	.main-title {
+		.section__content {
+			padding-left: 0;
+		}
+	}
+
+	.title-bg-slider {
+		&:after {
+			background-image: url("../images/title/bg-main-title-desktop-1024.png");
+		}
+
+		&__image {
+			margin-left: 0;
+		}
+	}
+
+	.main-title.brand {
+		.title-bg-slider {
+			&:after {
+				background-image: url("../images/title-brand-decor-1024.png");
+			}
+		}
+	}
+}
+
+@media all and (max-width: @media-md) {
+	.main-title {
+		height: 510px;
+
+		&__item {
+			padding-top: 170px;
+
+			.wrap-btn {
+				margin-top: 10px;
+			}
+		}
+
+		.section__content {
+			padding-left: 20px;
+		}
+	}
+
+	.title-bg-slider {
+
+		&:after {
+			background-image: url('../images/title/bg-main-title-desktop-768.png');
+		}
+		&__image {
+			height: 510px;
+		}
+	}
+
+	[title-slider] {
+
+		.swiper-btn-prev,
+		.swiper-btn-next {
+			transform: translateY(165px);
+		}
+
+		.main-title__item {
+			.txt {
+				height: 6em;
+			}
+		}
+	}
+
+	.main-title.brand {
+		height: 420px;
+
+		.title-bg-slider {
+			&__image {
+				height: 420px;
+			}
+		}
+
+		.title-bg-slider {
+			&:after {
+				background-image: url("../images/title-brand-decor-768.png");
+			}
+		}
+	}
+}
+
+@media all and (max-width: @media-sm) {
+	.main-title {
+		height: 450px;
+
+		.section__content {
+			padding-left: 0;
+		}
+
+		&__item {
+			padding-top: 160px;
+
+			.title {
+				max-height: 3.3em;
+			}
+
+			.txt {
+				max-height: 65px;
+			}
+
+			.wrap-btn {
+				margin-top: 20px;
+
+				.btn {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	.title-bg-slider {
+		&:after {
+			background-image: url('../images/title/bg-main-title-desktop-320.png');
+		}
+
+		&__image {
+			height: 450px;
+		}
+	}
+
+	[title-slider] {
+		.swiper-btn-next,
+		.swiper-btn-prev {
+			display: none;
+		}
+
+		.section__content {
+			padding-right: 0;
+		}
+
+		 .main-title__item {
+			.txt {
+				padding-right: 0;
+				height: 65px;
+			}
+		 }
+	} 
+
+	.main-title.brand {
+		.main-title {
+			&__item {
+				.title {
+					max-height: 2.2em;
+				}
+			}
+		} 
+
+		.brand {
+			&__title {
+				flex-wrap: wrap;
+			}
+
+			&__title-txt,
+			&__title-firm {
+				width: 100%;
+				margin-left: 0;
+			}
+
+            &__title-firm {
+              text-align: left;
+
+              img {
+                height: 40px;
+              }
+
+            }
+		}
+	}
+}

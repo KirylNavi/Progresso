@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Main</title>
+
+	<!-- Stylesheet -->
+	<link rel="stylesheet" href="./css/bootstrap.css">
+	<link rel="stylesheet" href="./css/bootstrap-select.css">
+	<link rel="stylesheet" href="./css/jquery.jscrollpane.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+	<link rel="stylesheet" href="./css/myIcons.css">
+	<link rel="stylesheet" href="./css/font-awesome.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="active-menu">
+
+	<div class="mob-menu">
+		<div class="mob-menu__head">
+			<div class="mob-menu__head-lang">
+				<a class="active" href="#">EN</a>
+				<a href="#">EN</a>
+			</div>
+			<div class="mob-menu__head-logo">
+				<a href="#" class="logo-first">
+					<img src="./images/logo-mobile.svg" alt="Logo mobile first">
+				</a>
+				<a href="#" class="logo-second">
+					<img src="./images/logo.svg" alt="Logo mobile second">
+				</a>
+			</div>
+			<div class="mob-menu__head-btn">
+				<span class="mob-btn" mob-btn-menu>
+					<span></span>
+					<span></span>
+					<span></span>
+				</span>
+			</div>
+		</div>
+		<div class="mob-menu__content">
+			<div class="contain">
+				<ul class="mob-menu__list">
+					<li>
+						<a href="#">Главная</a>
+					</li>
+					<li>
+						<a href="#">Новости</a>
+					</li>
+					<li>
+						<a href="#">Карьера</a>
+					</li>
+					<li>
+						<a href="#">Бренды</a>
+					</li>
+					<li>
+						<a href="#">Партнерам</a>
+					</li>	
+					<li>
+						<a href="#">Контакты</a>
+					</li>
+					<li class="social">
+						<div class="menu__social white">
+							<ul>
+								<li>
+									<a href="#">
+										<i class="fa fa-vk"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-facebook"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-instagram"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-map-marker"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>	
+				</ul>
+			</div>
+			
+		</div>
+	</div>
+	
+	<header class="head not-breadcrumbs">
+		<div class="section">
+			<div class="section__content">
+				
+				<div class="head__wrap">
+	
+					<div class="head__logo">
+						<a href="#" class="logo-mob__link">
+							<img src="./images/logo.svg" alt="Logo">
+						</a>
+					</div>
+	
+					<div class="head__btn-menu">
+						<span class="btn-mob-menu" mob-btn-menu>
+							<span></span>
+							<span></span>
+							<span></span>
+						</span>
+					</div>
+	
+					<div class="head__language">
+						<ul>
+							<li>
+								<a href="#">EN</a>
+							</li>
+							<li>
+								<a class="active" href="#">RU</a>
+							</li>
+						</ul>
+					</div>
+	
+				</div>
+	
+			</div>
+		</div>
+	</header>
+	
+	<div class="wrap-desktop-menu def" data-menu-desktop>
+		<div class="menu">
+			<div class="menu__wrap">
+				<div class="menu__first">
+					<div class="menu__logo">
+					<a href="#">
+							<i class="my-icon icon-logo"></i>
+						</a>
+					</div> 
+					<menu class="menu__list">
+						<li>
+							<a href="#">Главная</a>
+						</li>
+						<li>
+							<a href="#">Новости</a>
+						</li>
+						<li>
+							<a href="#">Карьера</a>
+						</li>
+						<li>
+							<a href="#">Бренды</a>
+						</li>
+						<li>
+							<a href="#">Партнерам</a>
+						</li>
+						<li>
+							<a href="#">Контакты</a>
+						</li>
+					</menu>
+					<div class="menu__social">
+						<ul>
+							<li>
+								<a href="#">
+									<i class="fa fa-vk"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fa fa-instagram"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fa fa-map-marker"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Title slider -->
+	<div class="main-title" data-static-opacity-menu>
+		<div class="title-slider" title-slider>
+			<div class="swiper-wrapper">
+				<!-- Slides -->
+				<div class="swiper-slide">
+					<div class="main-title__item">
+						<section class="section">
+							<div class="section__content">
+								<h2 class="title h1 mb-20">Заголовок крупный <br> на две строки</h2>
+								<p class="txt">Мелкий текст на одну или несколько строк, <br> в зависимости от настроения</p>
+								<div class="wrap-btn">
+									<a href="#" class="btn border-white text-uppercase">Узнать больше</a>
+								</div>
+							</div>
+							<div class="section__aside"></div>
+						</section>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="main-title__item">
+						<section class="section">
+							<div class="section__content">
+								<h2 class="title h1 mb-20">
+									Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.."
+								</h2>
+								<p class="txt">
+									Мелкий текст на одну или несколько строк, <br> в зависимости от настроения <br>
+									Мелкий текст на одну или несколько строк, <br> в зависимости от настроения
+								</p>
+								<div class="wrap-btn">
+									<a href="#" class="btn border-white text-uppercase">Узнать больше</a>
+								</div>
+							</div>
+							<div class="section__aside"></div>
+						</section>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="main-title__item">
+						<section class="section">
+							<div class="section__content">
+								<h2 class="title h1 mb-20">Заголовок крупный <br> на две строки</h2>
+								<p class="txt">Мелкий текст на одну или несколько строк, <br> в зависимости от настроения</p>
+								<div class="wrap-btn">
+									<a href="#" class="btn border-white text-uppercase">Узнать больше</a>
+								</div>
+							</div>
+							<div class="section__aside"></div>
+						</section>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="main-title__item">
+						<section class="section">
+							<div class="section__content">
+								<h2 class="title h1 mb-20">Заголовок крупный <br> на две строки</h2>
+								<p class="txt">Мелкий текст на одну или несколько строк, <br> в зависимости от настроения</p>
+								<div class="wrap-btn">
+									<a href="#" class="btn border-white text-uppercase">Узнать больше</a>
+								</div>
+							</div>
+							<div class="section__aside"></div>
+						</section>
+					</div>
+				</div>
+				<!-- Slides -->
+			</div>
+			<div class="swiper-btn-next">
+				<i class="my-icon icon-slider-arrow-upp"></i>
+			</div>
+			<div class="swiper-btn-prev">
+				<i class="my-icon icon-slider-arrow-down"></i>
+			</div>
+		</div>
+		<div class="wrap-title-bg-slider">
+			<div class="title-bg-slider" title-bg-slider>
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="title-bg-slider__image" style="background-image: url('./images/content/title-bg-slide-1.jpg')">
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="title-bg-slider__image"  style="background-image: url('./images/content/pexels-photo.jpg')">
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="title-bg-slider__image"  style="background-image: url('./images/content/pexels-photo-29532.jpg')">
+						</div>
+					</div>  
+					<div class="swiper-slide">
+						<div class="title-bg-slider__image" style="background-image: url('./images/content/laptop-mobile.jpg')">
+						</div>
+					</div>              
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End title slider -->
+
+	<main>
+
+		<!-- Slider firms -->
+		<div class="wrap-slider-firms bg-gray">
+			<div class="section">
+				<div class="section__content">
+					<div class="slider-firms__contain">
+						<div class="slider-firms" slider-firms>
+							<div class="swiper-wrapper">
+		
+								<div class="swiper-slide">
+									<a href="#" class="slider-firms__item">
+										<span class="slider-firms__image" style='background-image: url("./images/firms/askona.png")'>
+										</span>
+										<span class="slider-firms__image-blue" style='background-image: url("./images/firms/askona-blue.png")'>
+										</span>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#" class="slider-firms__item">
+										<span class="slider-firms__image" style='background-image: url("./images/firms/campina.png")'>
+										</span>
+										<span class="slider-firms__image-blue" style='background-image: url("./images/firms/campina-blue.png")'>
+										</span>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#" class="slider-firms__item">
+										<span class="slider-firms__image" style='background-image: url("./images/firms/dyntec.png")'>
+										</span>
+										<span class="slider-firms__image-blue" style='background-image: url("./images/firms/dyntec-blue.png")'>
+										</span>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href='#' class="slider-firms__item">
+										<span class="slider-firms__image" style='background-image: url("./images/firms/evalar.png")'>
+										</span>
+										<span class="slider-firms__image-blue" style='background-image: url("./images/firms/evalar-blue.png")'>
+										</span>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#" class="slider-firms__item">
+										<span class="slider-firms__image" style='background-image: url("./images/firms/mckesson.png")'>
+										</span>
+										<span class="slider-firms__image-blue" style='background-image: url("./images/firms/mckesson-blue.png")'>
+										</span>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#" class="slider-firms__item">
+										<span class="slider-firms__image" style='background-image: url("./images/firms/phs.png")'>
+										</span>
+										<span class="slider-firms__image-blue" style='background-image: url("./images/firms/phs-blue.png")'>
+										</span>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#" class="slider-firms__item">
+										<span class="slider-firms__image" style='background-image: url("./images/firms/roche.png")'>
+										</span>
+										<span class="slider-firms__image-blue" style='background-image: url("./images/firms/roche-blue.png")'>
+										</span>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#" class="slider-firms__item">
+										<span class="slider-firms__image" style='background-image: url("./images/firms/strepsils.png")'>
+										</span>
+										<span class="slider-firms__image-blue" style='background-image: url("./images/firms/strepsils-blue.png")'>
+										</span>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href='#' class="slider-firms__item">
+										<span class="slider-firms__image" style='background-image: url("./images/firms/vertex.png")'>
+										</span>
+										<span class="slider-firms__image-blue" style='background-image: url("./images/firms/vertex-blue.png")'>
+										</span>
+									</a>
+								</div>
+		
+							</div>
+						</div>
+						<span class="slider-firms__arrow next">
+							<span class="my-icon icon-slider-arrow-slim-left"></span>
+						</span>
+						<span class="slider-firms__arrow prev">
+							<span class="my-icon icon-slider-arrow-slim-right"></span>
+						</span>
+					</div>
+					<div class="slider-firms__btn">
+						<a href="#" class="btn">Узнать больше</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- End slider firms -->
+
+		<!-- Section news -->
+		<section class="block-news blue-line block-line" data-fixed-bot-menu>
+
+			<div class="section section__ident">
+				<div class="section__content">
+					<div class="section__title">
+						<h2 class="mb-5" title-line>
+							<a href="#" class="link-arrow">
+								Новости
+							</a>
+						</h2>
+						<p>
+							Мелкий текст на одну или несколько строк, <br>
+							в зависимости от настроения
+						</p>
+					</div>
+
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-3 col-md-6 col-sm-6">
+								<div class="wrap-news-item">
+									<a href="#" class="news-item__link md" style="background-image: url('./images/content/news-6.jpg');">
+										<div class="news-item__txt">
+											<div class="news-item__txt-contain">
+												<p class="date">7 марта</p>
+												<p class="txt">
+													Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона.
+												</p>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-6 col-sm-6">
+								<div class="wrap-news-item">
+									<a href="#" class="news-item__link md" style="background-image: url('./images/content/news-5.jpg');">
+										<div class="news-item__txt">
+											<div class="news-item__txt-contain">
+												<p class="date">7 марта</p>
+												<p class="txt">
+													Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона.
+												</p>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-6 col-sm-6">
+								<div class="wrap-news-item">
+									<a href="#" class="news-item__link sm" style="background-image: url('./images/content/news-3.jpg');">
+										<div class="news-item__txt">
+											<div class="news-item__txt-contain">
+												<p class="date">7 марта</p>
+												<p class="txt">
+													Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона.
+												</p>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="news-item__link sm hidden-sm" style="background-image: url('./images/content/news-4.jpg');">
+										<div class="news-item__txt">
+											<div class="news-item__txt-contain">
+												<p class="date">7 марта</p>
+												<p class="txt">
+													Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона.
+												</p>
+											</div>
+										</div>
+									</a>
+								</div>	
+							</div>
+							<div class="col-lg-3 col-md-6 col-sm-6">
+								<div class="wrap-news-item">
+									<a href="#" class="news-item__link" style="background-image: url('./images/content/news-1.jpg');">
+										<div class="news-item__txt">
+											<div class="news-item__txt-contain">
+												<p class="date">7 марта</p>
+												<p class="txt">
+													Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона.
+												</p>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="news-item__link hidden-sm" style="background-image: url('./images/content/news-1.jpg');">
+										<div class="news-item__txt">
+											<div class="news-item__txt-contain">
+												<p class="date">7 марта</p>
+												<p class="txt">
+													Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона.
+												</p>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="news-item__link hidden-sm" style="background-image: url('./images/content/news-2.jpg');">
+										<div class="news-item__txt">
+											<div class="news-item__txt-contain">
+												<p class="date">7 марта</p>
+												<p class="txt">
+													Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона.
+												</p>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="block-news__btn">
+						<a href="#" class="btn">Перейти к новостям</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End section news -->
+		
+		<!-- Content -->
+		<section class="career block-blue white-line block-line" career data-set-menu>
+			<div class="career__decor-left"></div>
+			<div class="career__decor-left-mob" career-top-bg></div>
+		
+			<div class="section section__ident">
+				<div class="section__content">
+					<div class="section__title">
+						<h2 class="txt-white mb-5" title-line>
+							<a href="#" class="link-arrow">
+								Карьера
+							</a>
+						</h2>
+						<p>Свежие вакансии</p>
+					</div>
+		
+					<div class="career__content">
+						<div class="career__left-col">
+							<div class="career__left-col-decor career-left-col-decor-js animate-wave" career-bot-bg></div>
+							<div class="section__title">
+								<p>Свежие вакансии</p>
+							</div>
+							<div class="career__pos">
+								
+								<div class="career__pos-item">
+									<a href="#" class="link-arrow">
+										<img src="./images/icon-russia.svg" class="career__pos-item-icon" alt="Icon city">
+									</a>
+									
+									<p class="career__pos-item-city txt-sm">
+										<b>
+											Москва, Россия
+										</b>
+									</p>
+									<h3 class="career__pos-item-name lh-12">
+										<a href="#">Название должности</a>
+									</h3>
+									<p class="career__pos-item-active">
+										<i>Название сферы деятельности</i>
+									</p>
+								</div>
+		
+								<div class="career__pos-item">
+									<a href="#" class="link-arrow">
+										<img src="./images/icon-russia.svg" class="career__pos-item-icon" alt="Icon city">
+									</a>
+									<p class="career__pos-item-city txt-sm">
+										<b>
+											Москва, Россия
+										</b>
+									</p>
+									<h3 class="career__pos-item-name lh-12">
+										<a href="#">
+											Название должности <br>
+											Название должности <br>
+											Название должности
+										</a>
+									</h3>
+									<p class="career__pos-item-active">
+										<i>Название сферы деятельности</i>
+									</p>
+								</div>
+		
+								<div class="career__pos-item">
+									<a href="#" class="link-arrow">
+										<img src="./images/icon-russia.svg" class="career__pos-item-icon" alt="Icon city">
+									</a>
+									<p class="career__pos-item-city txt-sm">
+										<b>
+											Москва, Россия
+										</b>
+									</p>
+									<h3 class="career__pos-item-name lh-12">
+										<a href="#">
+											Название должности <br>
+											Название должности
+										</a>
+									</h3>
+									<p class="career__pos-item-active">
+										<i>
+											Название сферы деятельности <br>
+											Название сферы деятельности
+										</i>
+									</p>
+								</div>
+		
+								<div class="career__pos-item">
+									<a href="#" class="link-arrow">
+										<img src="./images/icon-russia.svg" class="career__pos-item-icon" alt="Icon city">
+									</a>
+									<p class="career__pos-item-city txt-sm">
+										<b>
+											Москва, Россия
+										</b>
+									</p>
+									<h3 class="career__pos-item-name lh-12">
+										<a href="#">
+											Название должности
+										</a>
+									</h3>
+									<p class="career__pos-item-active">
+										<i>
+											Название сферы деятельности
+										</i>
+									</p>
+								</div>
+		
+								<div class="career__pos-btn">
+									<a href="#" class="btn border-white">Узнать больше</a>
+								</div>
+							</div>
+						</div>
+						<div class="career__right-col">
+							<div class="career__right-col-decor career-right-col-decor-js animate-wave">
+							</div>
+							<div class="career__info">
+								<div class="career__info-col">
+									
+									<div class="career__info-item">
+										<h3 class="career__info-item-title lh-12">
+											<a href="#">
+												Заголовок блока
+											</a>
+										</h3>
+										<p class="career__info-item-txt">
+											<i>
+												Небольшой текстовый информационный блок с полезной инфой.
+											</i>
+										</p>
+									</div>
+		
+									<div class="career__info-item">
+										<h3 class="career__info-item-title lh-12">
+											<a href="#">
+												Заголовок блока <br>
+												Заголовок блока
+											</a>
+										</h3>
+										<p class="career__info-item-txt">
+											<i>
+												Небольшой текстовый информационный блок с полезной инфой.
+											</i>
+										</p>
+									</div>
+		
+									<div class="career__info-item">
+										<h3 class="career__info-item-title lh-12">
+											<a href="#">
+												Заголовок блока <br>
+												Заголовок блока
+											</a>
+										</h3>
+										<p class="career__info-item-txt">
+											<i>
+												Небольшой текстовый информационный блок с полезной инфой. <br>
+												Небольшой текстовый информационный блок с полезной инфой. 
+											</i>
+										</p>
+									</div>
+		
+									<div class="career__info-btn">
+										<a href="#" class="btn border-white">Узнать больше</a>
+									</div>
+		
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End content -->
+
+		<section class="partners block-line blue-line" data-fixed-bot-mod-menu>
+			<div class="section section__ident">
+				<div class="section__content">
+					<div class="section__title">
+						<h2 class="mb-5" title-line>
+							<a href="#" class="link-arrow">Партнерам</a>
+						</h2>
+						<p>
+							Мелкий текст на одну или несколько строк, <br>
+							в зависимости от настроения
+						</p>
+					</div>
+					<div class="partners__contain">
+						<ol>
+							<li>
+								<h3 class="lh-11 mb-5">
+									Название <br>
+									преимущества
+								</h3>
+								<p>
+									Мелкий текст на одну или несколько строк, в зависимости от настроения
+								</p>
+							</li>
+		
+							<li>
+								<h3 class="lh-11 mb-5">
+									Название преимущества название преимущества название преимущества название преимущества
+								</h3>
+								<p>
+									Мелкий текст на одну или несколько строк, в зависимости от настроения мелкий текст на одну или несколько строк, в зависимости от настроения
+								</p>
+							</li>
+		
+							<li>
+								<h3 class="lh-11 mb-5">
+									Название преимущества название преимущества название
+								</h3>
+								<p>
+									Мелкий текст на одну или несколько строк, в зависимости от настроения мелкий текст на одну или несколько строк
+								</p>
+							</li>
+		
+							<li>
+								<h3 class="lh-11 mb-5">
+									Название <br>
+									преимущества
+								</h3>
+								<p>
+									Мелкий текст на одну или несколько строк, в зависимости от настроения
+								</p>
+							</li>
+		
+							<li>
+								<h3 class="lh-11 mb-5">
+									Название преимущества название преимущества название преимущества название преимущества
+								</h3>
+								<p>
+									Мелкий текст на одну или несколько строк, в зависимости от настроения мелкий текст на одну или несколько строк, в зависимости от настроения
+								</p>
+							</li>
+		
+							<li>
+								<h3 class="lh-11 mb-5">
+									Название <br>
+									преимущества
+								</h3>
+								<p>
+									Мелкий текст на одну или несколько строк, в зависимости от настроения
+								</p>
+							</li>
+						</ol>
+					</div>
+					<div class="partners__btn">
+						<div class="partners__btn-col">
+							<a href="#" class="btn">Узнать больше</a>
+						</div>
+						<div class="partners__btn-col">
+							<a href="#" class="btn">Стать партнером</a>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</section>
+
+	</main>
+
+	<footer class="foot">
+		<div class="foot__content">
+			<div class="foot__col">
+				<div class="foot__txt">
+					<p>
+						© ALT 2017. All rights reserved.
+					</p>
+					<p>
+						ООО «Актив Лайф Технолоджи»
+					</p>
+					<p>
+						УНП: 192643302
+					</p>
+				</div>
+			</div>
+			<div class="foot__col">
+				<div class="foot__contact-info">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="foot__social">
+								<div class="menu__social def">
+									<ul>
+										<li>
+											<a href="#">
+												<i class="fa fa-vk"></i>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<i class="fa fa-facebook-square"></i>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<i class="fa fa-instagram"></i>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="text-left foot__contact-btn">
+								<a href="#" class="btn border-white btn-icon text-uppercase">
+									<i class="fa fa-map-marker mr-5"></i>
+									Контакты
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="foot__col">
+				<div class="foot__logo">
+					<a href="#">
+						<i class="my-icon icon-logo-company-creator"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="./js/jquery-2.2.4.min.js"></script>
+	<script src="./js/jquery.transit.min.js"></script>
+	<script src="./js/snap.svg-min.js"></script>
+	<script src="./js/smooth-scroll.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/jquery.scrolly.js"></script>
+	<script src="./js/swiper.js"></script>
+	<script src="./js/bootstrap-select.min.js"></script>
+	<script src="./js/jquery.mousewheel.js"></script>
+	<script src="./js/jquery.jscrollpane.min.js"></script>
+	<script src="./js/init.js"></script>
+</body>
+</html>

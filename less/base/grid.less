@@ -1,6 +1,11 @@
-html {
+ html {
 	overflow-x: hidden;
 }
+
+body {
+	position: relative;
+}
+
 .wdth-content-full {
 	width: 100%;
 }
@@ -9,13 +14,139 @@ html {
 	.clearfix();
 }
 
+
+
+.horizontal-only
+{
+	height: auto;
+}
+
 .overflow-hid {
 	overflow: hidden;
 }
 
+.row {
+	&.flex {
+
+        &:after,
+        &:before {
+          display: none;
+        }
+
+		display: flex;
+		flex-wrap: wrap;
+        align-items: flex-start;
+
+		> div {
+			flex-shrink: 0;
+			float: none;
+		}
+	}
+}
+
+.row {
+	&.mod {
+		margin-left: 0;
+		margin-right: 0;
+
+		> div {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+}
+
+.mb {
+	&-none {
+		margin-bottom: 0 !important;
+	}
+
+	&-5 {
+		margin-bottom: 5px !important;
+	}
+	
+	&-10 {
+		margin-bottom: 10px !important;
+	}
+
+	&-15 {
+		margin-bottom: 15px !important;
+	}
+
+	&-20 {
+		margin-bottom: 20px !important;
+	}
+
+	&-25 {
+		margin-bottom: 25px !important;
+	}
+
+	&-45 {
+		margin-bottom: 45px !important;
+	}
+
+	&-50 {
+		margin-bottom: 50px !important;
+	}
+}
+
+.mt {
+
+	&-none,
+	&-0 {
+		margin-top: 0 !important;
+	}
+
+	&-10 {
+		margin-top: 10px !important;
+	}
+
+	&-45 {
+		margin-top: 45px !important;
+	}
+
+	&-50 {
+		margin-top: 50px !important;
+	}
+}
+
+.mr {
+	&-5 {
+		margin-right: 5px;
+	}
+}
+
+ .ml {
+
+   &-5 {
+     margin-left: 5px;
+   }
+
+   &-10 {
+     margin-left: 10px;
+   }
+
+ }
+
+.pt {
+	&-none {
+		padding-top: 0 !important;
+	}
+}
+
+.pb {
+	&-none {
+		padding-bottom: 0 !important;
+	}
+}
+
 img {
-	width: 100%;
     max-width: 100%;
+    height: auto;
+}
+
+.wdth-full {
+	width: 100%;
 }
 
 .disp-block {
@@ -32,126 +163,92 @@ img {
 	}
 }
 
-.mt {
-	&-none {
-		margin-top: 0 !important;
+.section {
+	padding-left: 275px;
+	padding-right: 60px;
+	display: flex;
+
+	&__ident {
+		padding-top: 58px;
+		padding-bottom: 58px;
+
+		&.mod-ident {
+			padding-bottom: 85px;
+		}
 	}
 
-	&-xs {
-		margin-top: 5px !important;
+	&__content {
+		width: 100%;
+		padding-left: 20px;
 	}
 
-	&-sm {
-		margin-top: 10px;
-	}
-
-	&-md {
-		margin-top: 15px;
-	}
-
-	&-lg {
-		margin-top: 20px;
-	}
-
-	&-lg-30 {
-		margin-top: 30px !important;
-	}
-
-	&-xlg {
-		margin-top: 40px;
-	}
-
-	&-xxlg {
-		margin-top: 60px !important;
-	}
-
-	&-xxxlg {
-		margin-top: 80px !important;
-	}
-
-	&-xxxxlg {
-		margin-top: 100px !important;
+	&__aside {
+		width: 235px;
+		flex-shrink: 0;
+		padding-left: 20px;
 	}
 }
 
-.mb {
+@media all and (max-width: @media-lg) {
+	.section {
+		flex-wrap: wrap;
+		padding-left: 255px;
 
-	&-none {
-		margin-bottom: 0 !important;
-	}
-	&-xs {
-		margin-bottom: 10px;
-	}
+		&__aside,
+		&__content {
+			width: 100%;
+			flex-shrink: 0;
+			padding-right: 0;
+		}
 
-	&-sm {
-		margin-bottom: 10px;
-	}
+		&__aside {
+			order: 1;
+		}
 
-	&-md {
-		margin-bottom: 15px !important;
-	}
+		&__ident {
+			padding-top: 45px;
+			padding-bottom: 45px;
+		}
 
-	&-lg {
-		margin-bottom: 20px;
-	}
-
-	&-lg-30 {
-		margin-bottom: 30px !important;
-	}
-
-	&-xlg {
-		margin-bottom: 25px !important;
-	}
-
-	&-xxlg {
-		margin-bottom: 40px;
-	}
-
-	&-xxxlg {
-		margin-bottom: 60px;
+		&__content {
+			order: 2;
+		}
 	}
 }
 
-.pb {
-	&-none {
-		padding-bottom: 0 !important;
+@media all and (max-width: @media-md) {
+	.section {
+		padding-left:  45px;
+		padding-right: 65px;
+
+		&__content,
+		&__aside {
+			width: 100%;
+			padding-left: 20px;
+			padding-right: 0;
+		}
 	}
 }
 
-.pt {
-	&-none {
-		padding-top: 0 !important;
-	}
-}
+@media all and (max-width: @media-sm) {
+	.section {
+		padding-left:  25px;
+		padding-right: 25px;
 
-.pl {
-	&-none {
-		padding-left: 0;
-	}
-}
+		&__content,
+		&__aside {
+			padding-left: 0;
+		}
 
-.pr {
-	&-none {
-		padding-right: 0;
+		&__ident {
+			&.mod-ident {
+				padding-bottom: 25px;
+			}
+		}
 	}
 }
 
 
-@media all and (min-width: @media-xs) {
-
-}
-
-@media all and (min-width: @media-sm) {
-	
-}
-
-@media all and (min-width: @media-mid) {
-	
-}
-
-@media all and (min-width: @media-lg) {
-	
-}
 
 @media all and (max-width: 479px) {
 	.hidden-xs {
@@ -159,25 +256,25 @@ img {
 	}
 }
 
-@media all and (min-width: 480px) and (max-width: 767px) {
+@media all and (min-width: 320px) and (max-width: 767px) {
 	.hidden-sm {
 		display: none !important;
 	}
 }
 
-@media all and (min-width: 768px) and (max-width: 989px) {
+@media all and (min-width: 768px) and (max-width: 1023px) {
 	.hidden-md {
 		display: none !important;
 	}
 }
 
-@media all and (min-width: 990px) and (max-width: 1199px) {
+@media all and (min-width: 1024px) and (max-width: 1439px) {
 	.hidden-lg {
 		display: none !important;
 	}
 }
 
-@media all and (min-width: 1200px) {
+@media all and (min-width: 1440px) {
 	.hidden-xlg {
 		display: none !important;
 	}

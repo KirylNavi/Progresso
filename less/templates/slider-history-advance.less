@@ -1,0 +1,273 @@
+.wrap-slider-history {
+	position: relative;
+
+	&:after {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 270px;
+		z-index: -1;
+		background: url("../images/slider-history-desktop.jpg") no-repeat 50% 50% / cover;
+	}
+
+	.section {
+		position: relative;
+		z-index: 20;
+
+		&__content {
+			padding-right: 235px;
+		}
+	}
+
+	.btn-slider-prev,
+	.btn-slider-next {
+		position: absolute;
+		line-height: 1;
+		width: 40px;
+		height: 70px;
+		text-align: left;
+		top: 415px;
+		z-index: 100;
+		cursor: pointer;
+		color: @color-gray;
+		transition: all .2s linear;
+
+		&:hover {
+			color: @color-black;
+		}
+
+		.my-icon {
+			font-size: 70px;
+			display: block;
+			line-height: 1;
+		}
+	}
+
+	.btn-slider-prev {
+		left: -15px;
+		transform: translateX(-60px);
+	}
+
+	.btn-slider-next {
+		right: 17px;
+		transform: translateX(60px);
+	}
+}
+
+.block-slider-history {
+	position: relative;
+	padding-bottom: 70px;
+
+	.swiper-pagination {
+		display: none;
+	}
+}
+
+.slider-history {
+	overflow: hidden;
+	position: relative;
+
+
+
+	&__title {
+		text-align: center;
+
+		.title {
+			margin-top: 45px;
+			margin-bottom: 45px;
+		}
+	}
+
+	&__item {
+		text-align: center;
+		padding-left: 40px;
+		padding-right: 40px;
+		transition: all .1s linear;
+	}
+
+	&__img-bg {
+		height: 250px;
+		width: 260px;
+		display: inline-block;
+		background: url("../images/bg-item-img.svg") no-repeat 50% 50% / contain;
+	}
+
+	&__img {
+		display: inline-block;
+		width: 90%;
+		height: 90%;
+		margin-top: 13px;
+		background-position: 50% 50%;
+		background-size: cover !important;
+		background-repeat: no-repeat;
+		mask: url('../images/mask-number.svg') no-repeat center center/auto 100%;
+	}
+
+	&__wrap-img {
+		margin-bottom: 25px;
+	}
+
+	&__txt {
+		background-color: @color-white;
+		color: @color-black;
+		font-size: 20px;
+		line-height: 1.2;
+		font-weight: @font-roman;
+
+		.sub-title {
+			font-size: 20px;
+			font-weight: @font-roman;
+			color: @color-gray-3;
+			margin: 0 0 35px;
+		}
+
+
+	}
+}
+
+@media all and (max-width: @media-lg) {
+	.wrap-slider-history {
+
+		&:after {
+			background-image: url('../images/slider-history-1024.jpg');
+		}
+
+		.section {
+			padding-left: 60px;
+
+			&__content {
+				padding-right: 0;
+				padding-left: 0;
+			}
+		}
+
+		.btn-slider-prev {
+			transform: translateX(0);
+		}
+
+		.btn-slider-next {
+			transform: translateX(0);
+		}
+	}
+
+	.slider-history {
+		&__item {
+			padding-left: 100px;
+			padding-right: 100px;
+		}
+	}
+}
+
+@media all and (max-width: @media-md) {
+	.wrap-slider-history {
+
+		&:after {
+			background-image: url("../images/slider-history-768.jpg");
+		}
+
+		.btn-slider-prev,
+		.btn-slider-next {
+			display: none;
+		}
+
+		.section {
+			padding-left: 45px;
+			padding-right: 45px;
+		}
+	}
+
+	.block-slider-history {
+		.swiper-pagination {
+			display: block;
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			bottom: 35px;
+			z-index: 20;
+		}
+
+		.swiper-pagination-bullet {
+			background-color: transparent;
+			width :auto;
+			height: auto;
+			display: inline-block;
+			padding-left: 4px;
+			padding-right: 4px;
+			opacity: 1;
+			color: @color-blue;
+
+			&.swiper-pagination-bullet-active {
+				&:after {
+					content: "\0041";
+				}
+			}
+
+			&:after {
+				content: "\004b";
+				font-family: 'Glyphter';
+				font-size: 12px;
+			}
+		}
+	}
+
+	.slider-history {
+		&__item {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+}
+
+@media all and (max-width: @media-sm) {
+	.wrap-slider-history {
+
+		&:after {
+			height: 220px;
+			background-image: url("../images/slider-history-320.jpg");
+		}
+
+		.section {
+			padding-left: 25px;
+			padding-right: 25px;
+		}
+	}
+
+	.slider-history {
+		&__title {
+			.title {
+				font-size: 36px;
+				margin-bottom: 20px;
+				height: 72px;
+			}
+		} 
+
+		&__img {
+			width: 86%;
+			height: 86%;
+			margin-top: 10px;
+		}
+
+		&__img-bg {
+			height: 153px;
+			width: 156px;
+		}
+
+		&__txt {
+			font-size: 16px;
+
+			.title {
+				font-size: 30px;
+				margin-bottom: 15px;
+			}
+
+			.sub-title {
+				font-size: 16px;
+				line-height: 1.4;
+				margin-bottom: 20px;
+			}
+
+		}
+	}
+}

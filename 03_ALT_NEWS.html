@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>News</title>
+
+	<!-- Stylesheet -->
+	<link rel="stylesheet" href="./css/bootstrap.css">
+	<link rel="stylesheet" href="./css/bootstrap-select.css">
+	<link rel="stylesheet" href="./css/jquery.jscrollpane.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+	<link rel="stylesheet" href="./css/myIcons.css">
+	<link rel="stylesheet" href="./css/font-awesome.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	<div class="mob-menu">
+		<div class="mob-menu__head">
+			<div class="mob-menu__head-lang">
+				<a class="active" href="#">EN</a>
+				<a href="#">RU</a>
+			</div>
+			<div class="mob-menu__head-logo">
+				<a href="#" class="logo-first">
+					<img src="./images/logo-mobile.svg" alt="Logo mobile first">
+				</a>
+				<a href="#" class="logo-second">
+					<img src="./images/logo.svg" alt="Logo mobile second">
+				</a>
+			</div>
+			<div class="mob-menu__head-btn">
+				<span class="mob-btn" mob-btn-menu>
+					<span></span>
+					<span></span>
+					<span></span>
+				</span>
+			</div>
+		</div>
+		<div class="mob-menu__content">
+			<div class="contain">
+				<ul class="mob-menu__list">
+					<li>
+						<a href="#">Главная</a>
+					</li>
+					<li>
+						<a href="#">Новости</a>
+					</li>
+					<li>
+						<a href="#">Карьера</a>
+					</li>
+					<li>
+						<a href="#">Бренды</a>
+					</li>
+					<li>
+						<a href="#">Партнерам</a>
+					</li>	
+					<li>
+						<a href="#">Контакты</a>
+					</li>
+					<li class="social">
+						<div class="menu__social white">
+							<ul>
+								<li>
+									<a href="#">
+										<i class="fa fa-vk"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-facebook"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-instagram"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fa fa-map-marker"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>	
+				</ul>
+			</div>
+			
+		</div>
+	</div>
+	
+	<header class="head">
+		<div class="section">
+			<div class="section__content">
+				
+				<div class="head__wrap">
+	
+					<div class="head__logo">
+						<a href="#" class="logo-mob__link">
+							<img src="./images/logo.svg" alt="Logo">
+						</a>
+					</div>
+	
+					<div class="head__breadcrumbs">
+						<ul>
+							<li>
+								<a href="#">Главная</a>
+							</li>
+							<li>
+								<a href="#">Новости</a>
+							</li>
+							<li>
+								<a href="#">Текущая новость</a>
+							</li>
+						</ul>
+					</div>
+	
+					<div class="head__btn-menu">
+						<span class="btn-mob-menu" mob-btn-menu>
+							<span></span>
+							<span></span>
+							<span></span>
+						</span>
+					</div>
+	
+					<div class="head__language">
+						<ul>
+							<li>
+								<a href="#">EN</a>
+							</li>
+							<li>
+								<a class="active" href="#">RU</a>
+							</li>
+						</ul>
+					</div>
+	
+				</div>
+	
+			</div>
+		</div>
+	</header>
+	
+	<div class="wrap-desktop-menu def" data-menu-desktop>
+		<div class="menu" >
+			<div class="menu__wrap">
+				<div class="menu__first">
+					<div class="menu__logo">
+						<a href="#">
+							<i class="my-icon icon-logo"></i>
+						</a>
+					</div>
+					<menu class="menu__list">
+						<li>
+							<a href="#">Главная</a>
+						</li>
+						<li>
+							<a href="#">Новости</a>
+						</li>
+						<li>
+							<a href="#">Карьера</a>
+						</li>
+						<li>
+							<a href="#">Бренды</a>
+						</li>
+						<li>
+							<a href="#">Партнерам</a>
+						</li>
+						<li>
+							<a href="#">Контакты</a>
+						</li>
+					</menu>
+					<div class="menu__social">
+						<ul>
+							<li>
+								<a href="#">
+									<i class="fa fa-vk"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fa fa-instagram"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fa fa-map-marker"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section class="title-headline set-top-menu" data-set-menu style="background-image: url('./images/title/title-headline-bg.jpg')">
+		<div class="section">
+			<div class="section__content">
+	
+				<div class="title-headline__wrap-txt">
+					<div class="title-headline__txt">
+						<h1 class="txt-white">
+							Название новости предусмотрено на две строки 
+							Название новости предусмотрено на две строки
+						</h1>
+					</div>
+				</div>
+	
+			</div>
+			<duv class="section__aside"></duv>
+		</div>
+	</section>
+	
+	<main>
+		<!-- Content -->
+		<section class="article-item block-line blue-line" data-set-menu>
+			<div class="section section__ident">
+				<div class="section__content content-txt">
+					<h2 title-line>
+						Крупный подзаголовок H2
+					</h2>
+					<p>
+						Completely monetize top-line potentialities without go forward services. Rapidiously syndicate inexpensive portals and high standards in convergence. Objectively facilitate interdependent manufactured products for go forward e-commerce. Collaboratively matrix market positioning collaboration and idea-sharing via just in time architectures. Competently restore B2B markets via dynamic e-markets.
+					</p>
+					<img src="./images/content/content-image.jpg" alt="Test image" class="wdth-full">
+					<h3>Заголовок H3</h3>
+
+					<ul>
+						<li>
+							Rapidiously syndicate inexpensive portals and high standards in convergence.
+						</li>
+						<li>
+							Objectively facilitate interdependent manufactured products for go forward e-commerce. 
+						</li>
+						<li>
+							Collaboratively matrix market positioning collaboration and idea-sharing via just in time architectures.
+						</li>
+						<li>
+							Competently restore B2B markets via dynamic e-markets.
+						</li>
+					</ul>
+					<h4>
+						Заголовок H4
+					</h4>
+					<ol>
+						<li>
+							Rapidiously syndicate inexpensive portals and high standards in convergence. 
+						</li>
+						<li>
+							Objectively facilitate interdependent manufactured products for go forward e-commerce. 
+						</li>
+						<li>
+							Collaboratively matrix market positioning collaboration and idea-sharing via just in time architectures. 
+						</li>
+						<li>
+							Competently restore B2B markets via dynamic e-markets.
+						</li>
+					</ol>
+
+					<blockquote>
+						<p>
+							<i>
+								«Наш вольный дух вьет вольный свой полет над радостною ширью синих вод: везде, где ветры пенный вал ведут, — Владенья наши, дом наш и приют».
+							</i>
+						</p>
+						<p class="txt-blue">
+							Дж.Г. Байрон. Поэма «Корсар»
+						</p>
+					</blockquote>
+
+					<p class="txt-lg">
+						Текстовый блок для крупной новости на две-три строки. Краткий анонс полной новости. Efficiently create highly efficient strategic theme areas and alternative human capital. Authoritatively grow fully tested schemas and world-class technology. Distinctively optimize unique methods of.
+					</p>
+
+					<p class="txt-md">
+						Текстовый блок для мелкой новости на две строки. Краткий анонс новости.Proactively syndicate distinctive communities whereas seamless relationships. Phosfluorescently formulate superior value before visionary deliverables. Seamlessly transform collaborative sources and high standards in bandwidth. Progressively.
+					</p>
+
+					<p>
+						Holisticly strategize high standards in catalysts for change and cutting-edge applications. Authoritatively re-engineer B2B vortals with sustainable alignments. Dynamically envisioneer flexible communities after low-risk high-yield expertise. Completely seize virtual technologies through vertical opportunities. Continually create maintainable metrics for 2.0 experiences.
+					</p>
+
+					<p>
+						Dramatically initiate adaptive deliverables for resource sucking testing procedures. Completely grow exceptional core competencies after client-centric paradigms. Competently reintermediate top-line strategic theme areas with distributed bandwidth. Authoritatively syndicate 24/7 expertise before sustainable supply chains. Synergistically actualize granular supply chains with excellent leadership skills.
+					</p>
+
+					<p>
+						Enthusiastically synergize holistic processes with team building models. Progressively drive economically sound leadership skills whereas backward-compatible metrics. Quickly procrastinate granular markets without market-driven total linkage. Rapidiously syndicate exceptional e-commerce rather than business technologies. Energistically foster stand-alone e-tailers before wireless bandwidth.
+					</p>
+
+					
+
+					<table>
+						<tbody>
+							<tr>
+								<td>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, voluptatibus?
+								</td>
+								<td>
+									Lorem ipsum dolor sit amet.
+								</td>
+								<td>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, numquam?
+								</td>
+								<td>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, reiciendis.
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, voluptatibus?
+								</td>
+								<td>
+									Lorem ipsum dolor sit amet.
+								</td>
+								<td>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, numquam?
+								</td>
+								<td>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, reiciendis.
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, voluptatibus?
+								</td>
+								<td>
+									Lorem ipsum dolor sit amet.
+								</td>
+								<td>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, numquam?
+								</td>
+								<td>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, reiciendis.
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, voluptatibus?
+								</td>
+								<td>
+									Lorem ipsum dolor sit amet.
+								</td>
+								<td>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, numquam?
+								</td>
+								<td>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, reiciendis.
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, voluptatibus?
+								</td>
+								<td>
+									Lorem ipsum dolor sit amet.
+								</td>
+								<td>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, numquam?
+								</td>
+								<td>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, reiciendis.
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<table>
+						<thead>
+							<tr>
+								<td>
+									Колонка 1
+								</td>	
+								<td>
+									Колонка 2
+								</td>
+								<td>
+									Колонка 3
+								</td>	
+								<td>
+									Колонка 4
+								</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, voluptatibus?
+								</td>
+								<td>
+									Lorem ipsum dolor sit amet.
+								</td>
+								<td>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, numquam?
+								</td>
+								<td>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, reiciendis.
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, voluptatibus?
+								</td>
+								<td>
+									Lorem ipsum dolor sit amet.
+								</td>
+								<td>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, numquam?
+								</td>
+								<td>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, reiciendis.
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, voluptatibus?
+								</td>
+								<td>
+									Lorem ipsum dolor sit amet.
+								</td>
+								<td>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, numquam?
+								</td>
+								<td>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, reiciendis.
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, voluptatibus?
+								</td>
+								<td>
+									Lorem ipsum dolor sit amet.
+								</td>
+								<td>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, numquam?
+								</td>
+								<td>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, reiciendis.
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, voluptatibus?
+								</td>
+								<td>
+									Lorem ipsum dolor sit amet.
+								</td>
+								<td>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, numquam?
+								</td>
+								<td>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, reiciendis.
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<h2>
+						Таблица
+					</h2>
+
+					<p>
+						Мы с удовольствием выслушаем ваши предложения. <br>
+						Пожалуйста, заполните форму — и вместе мы превратим вашу бизнес-идею в яркий и успешный совместный проект.
+					</p>
+					<div class="mt-45 mb-45">
+						<div class="row mod">
+							<div class="col-lg-4 col-md-6 col-sm-6">
+								<a href="#" class="btn btn-md btn-icon btn-full">
+									Показать больше
+									<i class="my-icon icon-btn-plus"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<form>
+						<div class="form-table" form-table>
+							<div class="row">
+								<div class="col-lg-4 col-md-6 col-sm-6">
+									<div class="form-group">
+										<input class="input-form br-lg br-md br-sm" type="text" value="Имя">
+										<label>Имя<span class="required">*</span></label>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-6 col-sm-6">
+									<div class="form-group">
+										<input class="input-form br-lg" type="text">
+										<label>Фамилия<span class="required">*</span></label>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-12 col-sm-12">
+									<div class="form-group">
+										<input class="input-form" type="text">
+										<label>Отчество<span class="required">*</span></label>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-6 col-sm-6">
+									<div class="form-group br-lg br-md br-sm">
+										<input class="input-form" type="text">
+										<label>Компания<span class="required">*</span></label>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-6 col-sm-6">
+									<div class="form-group br-lg">
+										<input class="input-form" type="text">
+										<label>E-mail<span class="required">*</span></label>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-6 col-sm-6">
+									<div class="form-group br-md br-sm">
+										<input class="input-form" type="text">
+										<label>Сайт компании</label>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-6 col-sm-6">
+									<div class="form-group br-lg">
+										<select class="selectpicker" title="Страна<span class='required'>*</span>" data-live-search="true" data-size="3">
+											<option>Америка</option>
+											<option>Австралия</option>
+											<option>Бразилия</option>
+											<option>Армения</option>
+											<option>Греция</option>
+											<option>ОАЭ</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-6 col-sm-6">
+									<div class="form-group br-lg br-md br-sm">
+										<select class="selectpicker" title="Город<span class='required'>*</span>" data-live-search="true" data-size="3">
+											<option>Ситеки</option>
+											<option>Рамла</option>
+											<option>Пхёнсон</option>
+											<option>Печ</option>
+											<option>Николаев</option>
+											<option>Муцамуду</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-6 col-sm-6">
+									<div class="form-group">
+										<select class="selectpicker" title="Регион<span class='required'>*</span>" data-live-search="true" data-size="3">
+											<option>Ситеки</option>
+											<option>Рамла</option>
+											<option>Пхёнсон</option>
+											<option>Печ</option>
+											<option>Николаев</option>
+											<option>Муцамуду</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-12">
+									<div class="form-group">
+										<textarea rows="10" class="input-form"></textarea>
+										<label>Ваше бизнес-предложение</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="mt-50">
+							<div class="row mod">
+								<div class="col-lg-4 col-md-6 col-sm-6">
+									<a href="#" class="btn btn-md btn-icon btn-full btn-blue">
+										Отправить
+										<i class="my-icon icon-btn-arrow-right"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="section__aside">
+				</div>
+			</div>
+		</section>
+		<!-- End content -->
+
+		<!-- Section news -->
+		<section class="block-news bg-gray block-line blue-line" data-fixed-bot-mod-menu>
+			<div class="section section__ident mod-ident">
+				<div class="section__content">
+					<div class="section__title">
+						<h2 title-line>
+							<a href="#" class="link-arrow">Похожие новости</a>
+						</h2>
+						<p>
+							Мелкий текст на одну или несколько строк, <br>
+							в зависимости от настроения
+						</p>
+					</div>
+
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-3 col-md-6 col-sm-6">
+								<div class="wrap-news-item">
+									<a href="#" class="news-item__link md" style="background-image: url('./images/content/news-6.jpg');">
+										<div class="news-item__txt">
+											<div class="news-item__txt-contain">
+												<p class="date">7 марта</p>
+												<p class="txt">
+													Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона.
+												</p>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-6 col-sm-6 hidden-sm">
+								<div class="wrap-news-item">
+									<a href="#" class="news-item__link md" style="background-image: url('./images/content/news-5.jpg');">
+										<div class="news-item__txt">
+											<div class="news-item__txt-contain">
+												<p class="date">7 марта</p>
+												<p class="txt">
+													Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона.
+												</p>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-6 col-sm-6">
+								<div class="wrap-news-item">
+									<a href="#" class="news-item__link sm" style="background-image: url('./images/content/news-3.jpg');">
+										<div class="news-item__txt">
+											<div class="news-item__txt-contain">
+												<p class="date">7 марта</p>
+												<p class="txt">
+													Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона.
+												</p>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="news-item__link sm" style="background-image: url('./images/content/news-4.jpg');">
+										<div class="news-item__txt">
+											<div class="news-item__txt-contain">
+												<p class="date">7 марта</p>
+												<p class="txt">
+													Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона.
+												</p>
+											</div>
+										</div>
+									</a>
+								</div>	
+							</div>
+							<div class="col-lg-3 col-md-6 col-sm-6 hidden-sm">
+								<div class="wrap-news-item">
+									<a href="#" class="news-item__link" style="background-image: url('./images/content/news-1.jpg');">
+										<div class="news-item__txt">
+											<div class="news-item__txt-contain">
+												<p class="date">7 марта</p>
+												<p class="txt">
+													Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона.
+												</p>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="news-item__link" style="background-image: url('./images/content/news-1.jpg');">
+										<div class="news-item__txt">
+											<div class="news-item__txt-contain">
+												<p class="date">7 марта</p>
+												<p class="txt">
+													Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона.
+												</p>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="news-item__link" style="background-image: url('./images/content/news-2.jpg');">
+										<div class="news-item__txt">
+											<div class="news-item__txt-contain">
+												<p class="date">7 марта</p>
+												<p class="txt">
+													Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона.
+												</p>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End section news -->
+	</main>
+
+	<footer class="foot">
+		<div class="foot__content">
+			<div class="foot__col">
+				<div class="foot__txt">
+					<p>
+						© ALT 2017. All rights reserved.
+					</p>
+					<p>
+						ООО «Актив Лайф Технолоджи»
+					</p>
+					<p>
+						УНП: 192643302
+					</p>
+				</div>
+			</div>
+			<div class="foot__col">
+				<div class="foot__contact-info">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="foot__social">
+								<div class="menu__social def">
+									<ul>
+										<li>
+											<a href="#">
+												<i class="fa fa-vk"></i>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<i class="fa fa-facebook-square"></i>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<i class="fa fa-instagram"></i>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="text-left foot__contact-btn">
+								<a href="#" class="btn border-white btn-icon text-uppercase">
+									<i class="fa fa-map-marker mr-5"></i>
+									Контакты
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="foot__col">
+				<div class="foot__logo">
+					<a href="#">
+						<i class="my-icon icon-logo-company-creator"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="./js/jquery-2.2.4.min.js"></script>
+	<script src="./js/jquery.transit.min.js"></script>
+	<script src="./js/snap.svg-min.js"></script>
+	<script src="./js/smooth-scroll.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/jquery.scrolly.js"></script>
+	<script src="./js/swiper.js"></script>
+	<script src="./js/bootstrap-select.min.js"></script>
+	<script src="./js/jquery.mousewheel.js"></script>
+	<script src="./js/jquery.jscrollpane.min.js"></script>
+	<script src="./js/init.js"></script>
+</body>
+</html>
